@@ -1,0 +1,16 @@
+.footer--primary {
+  padding: 0 20px;
+  background-color: var(--color-white);
+  color: var(--color-grey);
+}
+
+.footer--text {
+  margin: 0; padding: 32px 0;
+  font-size: 1.2rem; font-weight: 500; line-height: 1.8rem;
+}
+
+@media screen and (min-width: 800px) {
+  .footer--text {
+    text-align: center;
+  }
+}
