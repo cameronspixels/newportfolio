@@ -1,6 +1,7 @@
 :root {
 	--color-white: #FFF;
 	--color-off-white: #F5F5F5;
+	--color-very-off-white: #BDBDBD;
 	--color-grey: #303036;
 	--color-black: #0D0D0D;
 	--color-red: #F00D2E;
@@ -11,6 +12,7 @@
 	--color-bg-yellow: #FFF419;
 	--color-bg-yellow-2: #e6bf13;
 	--color-none: rgba(0,0,0,0);
+	--color-twitter-blue: #00aced;
 }
 
 @mixin fonts {
@@ -61,32 +63,50 @@ body {
 	margin: 0; padding: 0;
 	position: relative;
 	width: 100%;
-	height: 50vh;
+	height: 200px;
 }
 .section--ending--text {
 	margin: 0;
-	font-size: 2rem; line-height: 2.8rem;
+	font-size: 1.4rem; line-height: 2.2rem;
 	font-weight: 800;
-	color: var(--color-white);
+	color: var(--color-twitter-blue);
 	text-align: center;
 }
+@keyframes social--animation {
+	0% {
+		transform: scale(1);
+	}
+	8% {
+		transform: scale(1.2);
+	}
+	16% {
+		transform: scale(1);
+	}
+	24% {
+		transform: scale(1.2);
+	}
+	32% {
+		transform: scale(1);
+	}
+}
 .social--logo {
-	margin: 0 auto; padding-top: 32px;
+	margin: 0 auto; padding-top: 20px;
 	display: block;
-	height: 80px;
+	height: 60px;
+	animation: social--animation 4000ms infinite;
 }
 .logo--white--fill {
-	fill: var(--color-white);
+	fill: var(--color-twitter-blue);
 }
 .background--twitter {
-	background-color: #00aced;
+	background-color: var(--color-white);
 }
 .section--container--complete-center {
 	width: calc(100% - 40px);
 	padding: 0 20px;
 	position: absolute;
 	top: 50%; transform: translateY(-50%);
-	overflow: hidden;
+	overflow: visible;
 }
 .link--anchor {
 	height: 100%;
@@ -118,34 +138,31 @@ body {
 		display: grid; grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%; grid-template-rows: 100%; 
 	}
 	.section--header {
-		grid-column: 2/6;
+		grid-column: 1/6;
 		margin: 0 auto;
 		display: block;
 	}
 	.section--text {
-		max-width: 80%; grid-column: 6/10;
+		max-width: 80%; grid-column: 6/11;
 		font-size: 1.1rem; line-height: 2.2rem;
 	}
 	.section--ending--text {
-		font-size: 2.4rem;
+		font-size: 1.6rem;
 		grid-column: 2/6;
 		display: block;
 	}
 	.social--logo {
 		padding-top: 60px;
-		height: 120px;
-	}
-	.section--holding--binding {
-		height: 60vh;
+		height: 80px;
 	}
 	.section--container--complete-center {
 		display: grid; grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%; grid-template-rows: 100%;
 		.section--ending--text {
-			grid-column: 2/7;
+			grid-column: 3/7;
 			align-self: center;
 		}
 		.social--logo {
-			grid-column: 7/10;
+			grid-column: 7/8;
 			align-self: center;
 			padding: 0;
 		}
@@ -156,4 +173,8 @@ body {
 	.portfolio--text {
 		grid-row: 2/7;
 	}
+}
+
+@media screen and (min-width: 1040px) {
+
 }
