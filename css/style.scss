@@ -76,16 +76,16 @@ body {
 	0% {
 		transform: scale(1);
 	}
-	8% {
+	6% {
 		transform: scale(1.2);
 	}
-	16% {
+	12% {
 		transform: scale(1);
 	}
-	24% {
+	18% {
 		transform: scale(1.2);
 	}
-	32% {
+	24% {
 		transform: scale(1);
 	}
 }
@@ -93,7 +93,7 @@ body {
 	margin: 0 auto; padding-top: 20px;
 	display: block;
 	height: 60px;
-	animation: social--animation 4000ms infinite;
+	animation: social--animation 6000ms infinite;
 }
 .logo--white--fill {
 	fill: var(--color-twitter-blue);

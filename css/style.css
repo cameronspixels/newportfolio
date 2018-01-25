@@ -449,6 +449,8 @@ body {
 .section--text--blog {
   line-height: 1.4rem;
   max-width: 600px; }
+  .section--text--blog .section--paragraph {
+    font-weight: 400; }
 
 .blog--figure {
   margin: 24px 0;
@@ -543,22 +545,20 @@ body {
 @keyframes social--animation {
   0% {
     transform: scale(1); }
-  8% {
+  6% {
     transform: scale(1.2); }
-  16% {
+  12% {
     transform: scale(1); }
+  18% {
+    transform: scale(1.2); }
   24% {
-    transform: scale(1.2); }
-  32% {
-    transform: scale(1); }
-  100% {
     transform: scale(1); } }
 .social--logo {
   margin: 0 auto;
   padding-top: 20px;
   display: block;
   height: 60px;
-  animation: social--animation 4000ms infinite; }
+  animation: social--animation 6000ms infinite; }
 
 .logo--white--fill {
   fill: var(--color-twitter-blue); }
@@ -651,8 +651,8 @@ body {
     max-width: 100%; } }
 .footer--primary {
   padding: 0 20px;
-  background-color: var(--color-white);
-  color: var(--color-grey); }
+  background-color: var(--color-grey);
+  color: var(--color-white); }
 
 .footer--text {
   margin: 0;
