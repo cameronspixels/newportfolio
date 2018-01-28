@@ -487,8 +487,8 @@ body {
   .section--text--blog {
     padding-left: 24px;
     grid-row: 3/4;
-    grid-column: 2/8;
-    max-width: 90%;
+    grid-column: 2/10;
+    max-width: 600px;
     font-size: 1.2rem;
     line-height: 2rem; } }
 @media screen and (min-width: 1024px) {
@@ -496,7 +496,7 @@ body {
     grid-column: 3/8; }
 
   .section--text--blog {
-    grid-column: 3/9; } }
+    grid-column: 3/10; } }
 .header--one {
   margin: 0;
   padding: 0;
@@ -698,7 +698,7 @@ body {
     display: block; }
 
   .section--text {
-    max-width: 500px;
+    max-width: 600px;
     grid-column: 6/11;
     font-size: 1.1rem;
     line-height: 2.2rem; }
