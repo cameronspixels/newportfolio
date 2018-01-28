@@ -156,14 +156,11 @@ body {
 		height: 80px;
 	}
 	.section--container--complete-center {
-		display: grid; grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%; grid-template-rows: 100%;
 		.section--ending--text {
-			grid-column: 3/7;
-			align-self: center;
+
 		}
 		.social--logo {
-			grid-column: 7/8;
-			align-self: center;
+
 			padding: 0;
 		}
 	}

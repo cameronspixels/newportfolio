@@ -650,7 +650,7 @@ body {
     .form--contact .form--button {
       display: block; }
 
-  .form--label--hint, .form--field--box {
+  .form--label--hint {
     max-width: 100%; } }
 .footer--primary {
   padding: 0 20px;
@@ -712,17 +712,8 @@ body {
     padding-top: 60px;
     height: 80px; }
 
-  .section--container--complete-center {
-    display: grid;
-    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
-    grid-template-rows: 100%; }
-    .section--container--complete-center .section--ending--text {
-      grid-column: 3/7;
-      align-self: center; }
-    .section--container--complete-center .social--logo {
-      grid-column: 7/8;
-      align-self: center;
-      padding: 0; }
+  .section--container--complete-center .social--logo {
+    padding: 0; }
 
   .portfolio--header {
     grid-row: 2/7; }
