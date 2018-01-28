@@ -496,7 +496,8 @@ body {
     grid-column: 3/8; }
 
   .section--text--blog {
-    grid-column: 3/10; } }
+    grid-column: 3/10;
+    max-width: 800px; } }
 .header--one {
   margin: 0;
   padding: 0;
