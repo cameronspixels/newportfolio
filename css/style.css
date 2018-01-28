@@ -698,7 +698,7 @@ body {
     display: block; }
 
   .section--text {
-    max-width: 80%;
+    max-width: 500px;
     grid-column: 6/11;
     font-size: 1.1rem;
     line-height: 2.2rem; }
@@ -712,7 +712,11 @@ body {
     padding-top: 60px;
     height: 80px; }
 
+  .section--container--complete-center .section--ending--text {
+    margin: 0;
+    padding: 0; }
   .section--container--complete-center .social--logo {
+    margin: 0;
     padding: 0; }
 
   .portfolio--header {
