@@ -16,7 +16,7 @@
 }
 
 @mixin fonts {
-	font-family: 'Motiva Sans','Raleway', 'Helvetica Neue', 'Arial', 'Ubuntu', sans-serif;
+	font-family: 'Raleway', 'Helvetica Neue', 'Arial', 'Ubuntu', sans-serif;
 }
 
 body {
@@ -172,6 +172,21 @@ body {
 	}
 	.portfolio--text {
 		grid-row: 2/7;
+	}
+}
+
+.grid--button {
+	margin: 2rem auto 0 auto;
+	padding: 0.4rem 0.8rem;
+	max-width: 200px;
+	text-align: center;
+	display: block;
+	border: 2px solid var(--color-white);
+	border-radius: 6px;
+	background-color: var(--color-white); color: var(--color-blue);
+	&:hover {
+		background-color: var(--color-off-white);
+		border-color: var(--color-off-white);
 	}
 }
 

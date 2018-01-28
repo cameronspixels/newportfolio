@@ -103,6 +103,9 @@
 }
 
 @media screen and (min-width: 800px) {
+	.header--primary, .header--sub--1, .header--sub--2 {
+		height: 100vh;
+	}
 	@mixin ten--column--grid {
 		display: grid; grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%; grid-template-rows: 100%;
 	}
