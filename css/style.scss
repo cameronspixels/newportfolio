@@ -89,27 +89,29 @@ body {
 		transform: scale(1);
 	}
 }
-
+.social--anchor {
+	height: 100%;
+	display: block;
+	text-decoration: none; 
+}
+.social--anchor--text {
+	margin: 0; padding: 2rem 0;
+	font-size: 1.5rem; font-weight: 600;
+	color: var(--color--twitter--blue);
+	text-align: center;
+}
 .social--logo {
-	margin: 0 auto; padding-top: 20px;
+	margin: 0 auto; padding-bottom: 2rem;
 	display: block;
 	height: 60px;
 	animation: social--animation 6000ms infinite;
 }
-
 .logo--white--fill {
 	fill: var(--color--twitter--blue);
 }
-
 .background--twitter {
 	background-color: var(--color--white);
 }
-
-.link--anchor {
-	height: 100%;
-	display: block;
-}
-
 .section--dark {
 	background-color: var(--color--grey);
 	color: var(--color--white);
@@ -146,10 +148,14 @@ body {
 		max-width: 90%;
 		font-size: 1.1rem; line-height: 2.2rem;
 	}
-	
-	.link--anchor {
+	.social--anchor {
 		grid-column: 1/-1;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		align-content: center;
 		height: 200px;
+	}
+	.social--logo {
 	}
 	.header--one {
 		margin: 0;

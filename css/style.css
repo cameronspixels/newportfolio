@@ -523,9 +523,22 @@ body {
     transform: scale(1.2); }
   24% {
     transform: scale(1); } }
+.social--anchor {
+  height: 100%;
+  display: block;
+  text-decoration: none; }
+
+.social--anchor--text {
+  margin: 0;
+  padding: 2rem 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color--twitter--blue);
+  text-align: center; }
+
 .social--logo {
   margin: 0 auto;
-  padding-top: 20px;
+  padding-bottom: 2rem;
   display: block;
   height: 60px;
   animation: social--animation 6000ms infinite; }
@@ -535,10 +548,6 @@ body {
 
 .background--twitter {
   background-color: var(--color--white); }
-
-.link--anchor {
-  height: 100%;
-  display: block; }
 
 .section--dark {
   background-color: var(--color--grey);
@@ -583,7 +592,8 @@ body {
   max-width: 500px;
   width: 80%; }
   .form--label--hint:last-child {
-    padding-bottom: 3rem; }
+    padding-bottom: 3rem;
+    margin: 0; }
 
 .form--label--subtext {
   margin: 0.4rem 0 0.7rem 0;
@@ -663,8 +673,11 @@ body {
     font-size: 1.1rem;
     line-height: 2.2rem; }
 
-  .link--anchor {
+  .social--anchor {
     grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
     height: 200px; }
 
   .header--one {
