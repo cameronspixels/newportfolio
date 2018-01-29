@@ -146,6 +146,7 @@
 	top: 50%;
 	transform: translateY(-50%);
 	width: 100%;
+	padding: 0;
 }
 
 .nav--active {
@@ -282,6 +283,7 @@
 		position: relative;
 	}
 	.nav--center {
+		margin: 0;
 		top: 1rem;
 		transform: translateY(0);
 		padding: 0 1rem;

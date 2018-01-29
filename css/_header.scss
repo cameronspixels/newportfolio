@@ -35,7 +35,11 @@
 }
 
 .link--skip {
-	display: none;
+	height: 1px;
+	width: 1px;
+	position: absolute;
+	left: 0;
+	top: -500px;
 }
 
 .button--primary {

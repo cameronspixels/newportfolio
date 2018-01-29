@@ -100,8 +100,26 @@ body {
 	display: block;
 	text-decoration: none; 
 }
+.social--anchor--page {
+	height: 100%;
+	display: block;
+	text-decoration: none; 
+	background-color: var(--color--grey);
+}
 .social--anchor--text {
 	margin: 0; padding: 2rem 0;
+	font-size: 1.5rem; font-weight: 600;
+	color: var(--color--twitter--blue);
+	text-align: center;
+}
+.social--anchor--page--intro {
+	margin: 0; padding: 3rem 0 0 0;
+	font-size: 1rem; font-weight: 400;
+	color: var(--color--white);
+	text-align: center;
+}
+.social--anchor--page--text {
+	margin: 0; padding: 2rem 0 3rem 0;
 	font-size: 1.5rem; font-weight: 600;
 	color: var(--color--twitter--blue);
 	text-align: center;
@@ -132,7 +150,7 @@ body {
 		grid-template-columns: repeat(12, 1fr);
 	}
 	.section--header {
-		padding: 4rem 0;
+		padding: 6rem 0;
 		display: block;
 		text-align: center;
 		grid-column: 1/7;
@@ -148,6 +166,9 @@ body {
 				max-width: 500px;
 			}
 	}
+	.section--top--text {
+		padding-top: 2rem;
+	}
 	.section--paragraph {
 		margin: 0 auto;
 		text-align: left;
@@ -160,6 +181,13 @@ body {
 		grid-template-columns: 1fr 1fr;
 		align-content: center;
 		height: 200px;
+	}
+	.social--anchor--page {
+		grid-column: 1/-1;
+		min-height: 200px;
+	}
+	.social--anchor--page--text {
+		font-size: 2rem; font-weight: 600;
 	}
 	.header--one {
 		margin: 0;
