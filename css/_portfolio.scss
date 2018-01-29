@@ -38,17 +38,25 @@
 		padding: 0;
 		display: block;
 		text-align: center;
-		grid-column: 1/8;
+		grid-column: 1/7;
 		width: 100%;
 		.header--two {
       padding: 4rem 0 2rem 4rem;
 		}
   }
   .section--text--portfolio {
-    grid-column: 1/8;
+    grid-column: 1/7;
     .section--paragraph {
       padding-left: 4rem;
       max-width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section--text--portfolio {
+    .section--paragraph {
+      padding-left: 14rem;
     }
   }
 }
