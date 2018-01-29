@@ -9,7 +9,6 @@
 	@include header-stuff;
 	background-color: var(--color--darkred);
 	color: var(--color--white);
-	max-width: 1300px;
 }
 
 .header--sub--1 {
@@ -28,6 +27,7 @@
 	top: 50%;
 	transform: translateY(-50%);
 	width: 90%; 
+	max-width: 1300px;
 }
 
 .header--tagline {
