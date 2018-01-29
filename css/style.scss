@@ -50,12 +50,20 @@ body {
 	color: var(--color--grey);
 	text-decoration: none;
 	border-bottom: 2px solid var(--color--grey);
+	&:hover {
+		color: var(--color--darkred);
+		border-color: var(--color--darkred);
+	}
 }
 
 .link--alternative {
 	color: var(--color--white);
 	text-decoration: none;
 	border-bottom: 2px solid var(--color--white);
+	&:hover {
+		color: var(--color--blue);
+		border-color: var(--color--blue);
+	}
 }
 
 .section--header, .section--text {

@@ -117,7 +117,15 @@ body {
   .header--primary--content {
     width: calc(95% - 40px);
     left: 50%;
-    transform: translate(-50%, -50%); } }
+    transform: translate(-50%, -50%); }
+
+  .header--indicator {
+    width: 40px;
+    position: absolute;
+    bottom: 30px;
+    right: 50%;
+    transform: translateX(-50%);
+    animation: hovering 10s infinite; } }
 .nav--list {
   margin: 0;
   padding: 0;
@@ -363,7 +371,6 @@ body {
 
   .nav--active {
     text-decoration: underline;
-    text-decoration-skip-ink: auto;
     color: var(--color--white); }
     .nav--active:after {
       content: ''; }
@@ -495,11 +502,17 @@ body {
   color: var(--color--grey);
   text-decoration: none;
   border-bottom: 2px solid var(--color--grey); }
+  .link--regular:hover {
+    color: var(--color--darkred);
+    border-color: var(--color--darkred); }
 
 .link--alternative {
   color: var(--color--white);
   text-decoration: none;
   border-bottom: 2px solid var(--color--white); }
+  .link--alternative:hover {
+    color: var(--color--blue);
+    border-color: var(--color--blue); }
 
 .section--header, .section--text {
   padding: var(--mobile--padding); }
@@ -587,6 +600,9 @@ body {
   text-align: center;
   border: none;
   border-radius: 4px; }
+  .form--button:hover {
+    background-color: var(--color--off--white);
+    cursor: pointer; }
 
 .form--label--hint {
   max-width: 500px;

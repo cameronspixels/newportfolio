@@ -115,4 +115,12 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 	}
+	.header--indicator {
+		width: 40px;
+		position: absolute;
+		bottom: 30px;
+		right: 50%;
+		transform: translateX(-50%);
+		animation: hovering 10s infinite;
+	}
 }

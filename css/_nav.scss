@@ -299,12 +299,10 @@
 		text-indent: 0;
 		color: var(--color--off--white);
 		&:hover {
-
 		}
 	}
 	.nav--active {
 		text-decoration: underline;
-		text-decoration-skip-ink: auto;
 		color: var(--color--white);
 		&:after {
 			content: '';
