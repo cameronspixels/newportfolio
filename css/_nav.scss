@@ -1,6 +1,6 @@
 .nav--list {
 	margin: 0; padding: 0;
-	background-color: var(--color-white);
+	background-color: var(--color--white);
 	max-height: 0;
 	opacity: 0;
 	overflow: hidden;
@@ -26,14 +26,14 @@
 	display: inline-block;
 	border: none;
 	border-radius: 20px;
-	background-color: var(--color-white);
+	background-color: var(--color--white);
 	position: absolute;
 	right: 0;
 }
 
 .nav--color--alt {
 	.nav--hamburger--block {
-		background-color: var(--color-grey);
+		background-color: var(--color--grey);
 	}
 }
 
@@ -65,7 +65,7 @@
 	display: block;
 	right: 20px;
 	.nav--hamburger--block {
-		background-color: var(--color-grey);
+		background-color: var(--color--grey);
 
 	}
 	.nav--hamburger--block-1 {
@@ -138,7 +138,7 @@
 	width: 100%;
 	display: block;
 	text-indent: 1.5rem;
-	color: var(--color-grey);
+	color: var(--color--grey);
 }
 
 .nav--center {
@@ -277,7 +277,7 @@
 		opacity: 1;
 		max-height: 100vh;
 		height: 100vh;
-		background-color: var(--color-none);
+		background-color: var(--color--none);
 		text-align: right;
 		position: relative;
 	}
@@ -297,7 +297,7 @@
 		padding: 1.2rem 0;
 		font-size: 1.2rem; line-height: 1rem; font-weight: 500;
 		text-indent: 0;
-		color: var(--color-off-white);
+		color: var(--color--off--white);
 		&:hover {
 
 		}
@@ -305,14 +305,14 @@
 	.nav--active {
 		text-decoration: underline;
 		text-decoration-skip-ink: auto;
-		color: var(--color-white);
+		color: var(--color--white);
 		&:after {
 			content: '';
 		}
 	}
 	.nav--blog {
 		.nav--link {
-		color: var(--color-grey);
+		color: var(--color--grey);
 		}
 	}
 }

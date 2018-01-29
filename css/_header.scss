@@ -7,19 +7,19 @@
 
 .header--primary {
 	@include header-stuff;
-	background-color: var(--color-darkred);
-	color: var(--color-white);
+	background-color: var(--color--darkred);
+	color: var(--color--white);
 }
 
 .header--sub--1 {
 	@include header-stuff;
-	background-color: var(--color-darkblue);
-	color: var(--color-white);
+	background-color: var(--color--darkblue);
+	color: var(--color--white);
 }
 .header--sub--2 {
 	@include header-stuff;
-	background-color: var(--color-bg-yellow);
-	color: var(--color-grey);
+	background-color: var(--color--bg--yellow);
+	color: var(--color--grey);
 }
 
 .header--primary--content {
@@ -72,10 +72,10 @@
 	animation: hovering 10s infinite;
 }
 .header--indicator--fill {
-	fill: var(--color-white);
+	fill: var(--color--white);
 }
 .header--indicator--fill--alt {
-	fill: var(--color-grey);
+	fill: var(--color--grey);
 }
 
 @keyframes hovering {
@@ -106,21 +106,13 @@
 	.header--primary, .header--sub--1, .header--sub--2 {
 		height: 100vh;
 	}
-	@mixin ten--column--grid {
-		display: grid; grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%; grid-template-rows: 100%;
-	}
-	.header--primary, .header--sub--1, .header--sub--2 {
-		@include ten--column--grid;
-	}
-
 	.header--tagline {
 		font-weight: 800; font-size: 2.4rem;
 		text-align: right;
 	}
-
 	.header--primary--content {
-		grid-column: 2/10;
-		width: 100%;
+		width: calc(95% - 40px);
+		left: 50%;
+		transform: translate(-50%, -50%);
 	}
-
 }

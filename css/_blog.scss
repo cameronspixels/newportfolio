@@ -1,34 +1,38 @@
-.section--header--blog {
+.header--two--blog {
+  padding: var(--mobile--padding);
+  margin-top: 3rem;
+  font-weight: 800;
+  font-size: 2rem;
 }
-.blog--info {
+.blog--info--date {
+  margin: 2rem 0 0.5rem 0;
   font-size: 0.8rem; font-weight: 500;
-  .blog--info--date {
-    margin: 2rem 0 0.5rem 0;
-
-  }
-  .blog--info--name {
-    margin: 0.5rem 0 2rem 0;
-    font-style: italic;
-  }
+  padding: var(--mobile--padding);
+}
+.blog--info--name {
+  margin: 0.5rem 0 2rem 0;
+  font-size: 0.8rem; font-weight: 500;
+  padding: var(--mobile--padding);
+  font-style: italic;
 }
 .section--text--blog {
   line-height: 1.4rem;
   max-width: 600px;
+  padding: var(--mobile--padding);
   .section--paragraph {
     font-weight: 400;
   }
 }
-
 .blog--figure {
-  margin: 24px 0;
-  position: relative;
+  margin: 24px auto;
+  &>* {
+    max-width: 90%;
+  }
   .blog--figure--image {
     text-align: left;
-    max-width: 100%;
   }
   .blog--figure--caption {
     font-size: 0.8rem; font-style: italic;
-    max-width: 100%;
     .blog--figure--text {
       margin-top: 4px;
       padding: 0;
@@ -37,35 +41,37 @@
 }
 
 @media screen and (min-width: 800px) {
-  .section--container--blog {
-		grid-template-rows: 1fr 1fr 2fr;
+  .header--two--blog {
+    margin: 4rem 0 1rem 0;
+    font-size: 3.6rem;
+    grid-column: 3/8;
   }
-  .section--header--blog {
-		grid-row: 1/2;
-		grid-column: 2/7;
-		display: block;
-		width: 100%;
+  .blog--info--date {
+    grid-column: 3/8;
   }
-  .blog--info {
-    grid-column: 2/7;
-    grid-row: 2/3;
-    padding-left: 12px;
+  .blog--info--name {
+    grid-column: 3/8;
   }
   .section--text--blog {
     padding-left: 24px;
-		grid-row: 3/4;
-		grid-column: 2/10;
 		max-width: 600px;
-		font-size: 1.2rem; line-height: 2rem;
+    font-size: 1.2rem; line-height: 2rem;
+    grid-column: 3/11;
+    .section--paragraph {
+      max-width: 90%;
+    }
+  }
+  .blog--figure {
+    max-width: 90%;
+    &>* {
+      max-width: 100%;
+      width: 100%;
+    }
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .section--header--blog, .blog--info {
-    grid-column: 3/8;
-  }
   .section--text--blog {
-    grid-column: 3/10;
     max-width: 800px;
   }
 }
