@@ -542,16 +542,16 @@ body {
     max-width: 800px; } }
 @media screen and (min-width: 1300px) {
   .header--two--blog {
-    grid-column: 5/9; }
+    grid-column: 4/9; }
 
   .blog--info--date {
-    grid-column: 5/9; }
+    grid-column: 4/9; }
 
   .blog--info--name {
-    grid-column: 5/9; }
+    grid-column: 4/9; }
 
   .section--text--blog {
-    grid-column: 5/11; } }
+    grid-column: 4/11; } }
 .header--one {
   margin: 0;
   padding: 0;
