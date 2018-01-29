@@ -42,8 +42,6 @@ body {
 }
 .left--align {
 	text-align: left;
-	margin: 0 auto;
-	display: block;
 }
 
 .link--regular {
@@ -66,11 +64,11 @@ body {
 	}
 }
 
-.section--header, .section--text {
+.section--header, .section--text, .section--header--portfolio, .section--text--portfolio {
 	padding: var(--mobile--padding);
 }
 
-.section--text {
+.section--text, .section--text--portfolio {
 	line-height: 1.8rem;
 	.section--paragraph {
 		margin: 0; padding-bottom: 1rem;

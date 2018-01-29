@@ -34,4 +34,21 @@
     padding: 2rem 0 1rem 0;
     max-width: 80%;
   }
+	.section--header--portfolio {
+		padding: 0;
+		display: block;
+		text-align: center;
+		grid-column: 1/8;
+		width: 100%;
+		.header--two {
+      padding: 4rem 0 2rem 4rem;
+		}
+  }
+  .section--text--portfolio {
+    grid-column: 1/8;
+    .section--paragraph {
+      padding-left: 4rem;
+      max-width: 100%;
+    }
+  }
 }

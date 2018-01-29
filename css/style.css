@@ -412,7 +412,22 @@ body {
 @media screen and (min-width: 800px) {
   .button--container {
     padding: 2rem 0 1rem 0;
-    max-width: 80%; } }
+    max-width: 80%; }
+
+  .section--header--portfolio {
+    padding: 0;
+    display: block;
+    text-align: center;
+    grid-column: 1/8;
+    width: 100%; }
+    .section--header--portfolio .header--two {
+      padding: 4rem 0 2rem 4rem; }
+
+  .section--text--portfolio {
+    grid-column: 1/8; }
+    .section--text--portfolio .section--paragraph {
+      padding-left: 4rem;
+      max-width: 100%; } }
 .header--two--blog {
   padding: var(--mobile--padding);
   margin-top: 3rem;
@@ -494,9 +509,7 @@ body {
   font-size: 2rem; }
 
 .left--align {
-  text-align: left;
-  margin: 0 auto;
-  display: block; }
+  text-align: left; }
 
 .link--regular {
   color: var(--color--grey);
@@ -514,15 +527,15 @@ body {
     color: var(--color--blue);
     border-color: var(--color--blue); }
 
-.section--header, .section--text {
+.section--header, .section--text, .section--header--portfolio, .section--text--portfolio {
   padding: var(--mobile--padding); }
 
-.section--text {
+.section--text, .section--text--portfolio {
   line-height: 1.8rem; }
-  .section--text .section--paragraph {
+  .section--text .section--paragraph, .section--text--portfolio .section--paragraph {
     margin: 0;
     padding-bottom: 1rem; }
-  .section--text .section--paragraph:last-child {
+  .section--text .section--paragraph:last-child, .section--text--portfolio .section--paragraph:last-child {
     padding-bottom: 3rem; }
 
 @keyframes social--animation {
