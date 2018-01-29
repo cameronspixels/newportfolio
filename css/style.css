@@ -720,17 +720,7 @@ body {
   color: var(--color--very--off--white); }
 
 @media screen and (min-width: 800px) {
-  .section--container--contact {
-    grid-template-rows: 1fr 1fr; }
-    .section--container--contact .section--header {
-      margin: 0;
-      grid-column: 2/10; }
-    .section--container--contact .header--two {
-      padding-bottom: 2rem; }
-
   .form--contact {
-    grid-column: 2/10;
-    grid-row: 2/3;
     max-width: 800px;
     margin-top: 2rem; }
     .form--contact .input--name, .form--contact .input--email {
