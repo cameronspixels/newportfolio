@@ -38,14 +38,14 @@
 		padding: 0;
 		display: block;
 		text-align: center;
-		grid-column: 1/7;
+		grid-column: 1/8;
 		width: 100%;
 		.header--two {
-      padding: 4rem 0 2rem 4rem;
+      padding: 4rem 0 2rem 12rem;
 		}
   }
   .section--text--portfolio {
-    grid-column: 1/7;
+    grid-column: 1/8;
     .section--paragraph {
       padding-left: 4rem;
       max-width: 100%;
@@ -56,7 +56,7 @@
 @media screen and (min-width: 1200px) {
   .section--text--portfolio {
     .section--paragraph {
-      padding-left: 14rem;
+      padding-left: 12rem;
     }
   }
 }
