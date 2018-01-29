@@ -29,7 +29,8 @@ body {
   position: relative;
   height: 90vh;
   background-color: var(--color--darkred);
-  color: var(--color--white); }
+  color: var(--color--white);
+  max-width: 1300px; }
 
 .header--sub--1 {
   padding: 0 20px;
