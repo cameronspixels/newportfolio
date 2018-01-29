@@ -1,7 +1,6 @@
 .portfolio--image {
   margin: 2rem 0 3rem 0;
   height: 300px;
-  display: block;
   background-image: url(../img/ssg-desktop.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -9,8 +8,13 @@
   max-width: 80%;
   margin: 0 auto;
 }
-.image--portfolio--overlay {
-  display: none;
+.section--image--portfolio {
+  margin: 0 20px 3rem 20px;
+  height: 400px;
+  background-image: url(../img/ssg-desktop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 .button--container {
   padding: 1rem 0 3rem 0;
@@ -29,6 +33,7 @@
 	}
 }
 
+
 @media screen and (min-width: 800px) {
   .button--container {
     padding: 2rem 0 1rem 0;
@@ -38,22 +43,31 @@
 		padding: 0;
 		display: block;
 		text-align: center;
-		grid-column: 1/8;
+		grid-column: 1/7;
 		width: 100%;
 		.header--two {
-      padding: 4rem 0 2rem 12rem;
+      padding: 4rem 0 2rem 4rem;
 		}
   }
   .section--text--portfolio {
-    grid-column: 1/8;
+    grid-column: 1/7;
     .section--paragraph {
       padding-left: 4rem;
       max-width: 100%;
     }
   }
+  .section--image--portfolio {
+    grid-column: 7/13;
+    grid-row-start: 1;
+  }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1300px) {
+  .section--header--portfolio {
+    .header--two {
+      padding: 4rem 0 2rem 12rem;
+    }
+  }
   .section--text--portfolio {
     .section--paragraph {
       padding-left: 12rem;
