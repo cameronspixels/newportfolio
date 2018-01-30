@@ -39,12 +39,50 @@
     }
   }
 }
+.blog--nav {
+  margin: 3rem 0 0 0;
+  list-style-type: none;
+  padding: var(--mobile--padding);
+  font-weight: 700;
+}
+.blog--nav--link {
+  text-decoration: none;
+  color: var(--color--grey);
+  display: block;
+  margin-bottom: 0.5rem;
+  &:hover {
+    color: var(--color--blue);
+  }
+}
+.blog--nav--intro {
+  margin-bottom: 1rem;
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 510px) {
+  .blog--nav {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    margin: 0;
+  }
+}
 
 @media screen and (min-width: 800px) {
+  .blog--nav {
+    margin-top: 5rem;
+    grid-column: 9/12;
+    font-size: 1.2rem;
+  }
+  .blog--nav--link {
+    margin-bottom: 1rem;
+    display: inline-block;
+  }
   .header--two--blog {
     margin: 4rem 0 1rem 0;
     font-size: 3.6rem;
     grid-column: 3/8;
+    grid-row-start: 1;
   }
   .blog--info--date {
     grid-column: 3/8;
