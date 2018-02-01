@@ -1,3 +1,5 @@
+/* I write with SASS and apologise if this complies in flames.
+If you'd like, you can find the uncompiled files .scss in the same directory. */
 :root {
   --color--white: #FFF;
   --color--off--white: #F5F5F5;
@@ -901,6 +903,9 @@ body {
 
   .portfolio--text {
     grid-row: 2/7; } }
+.section--list {
+  padding: 0 0 0 2rem; }
+
 @media screen and (min-width: 1024px) {
   .section--header .header--two {
     padding: 0 0 0 4rem; }
