@@ -6,6 +6,7 @@ If you'd like, you can find the uncompiled files .scss in the same directory. */
 	--color--off--white: #F5F5F5;
 	--color--very--off--white: #BDBDBD;
 	--color--grey: #303036;
+	--color--off--grey: #1e1e20;
 	--color--black: #0D0D0D;
 	--color--red: #F00D2E;
 	--color--darkred: #D20D2E;
@@ -52,8 +53,8 @@ body {
 	text-decoration: none;
 	border-bottom: 2px solid var(--color--grey);
 	&:hover {
-		color: var(--color--darkred);
-		border-color: var(--color--darkred);
+		color: var(--color--black);
+		border-color: var(--color--black);
 	}
 }
 
@@ -62,8 +63,8 @@ body {
 	text-decoration: none;
 	border-bottom: 2px solid var(--color--white);
 	&:hover {
-		color: var(--color--blue);
-		border-color: var(--color--blue);
+		color: var(--color--very--off--white);
+		border-color: var(--color--very--off--white);
 	}
 }
 
@@ -71,8 +72,9 @@ body {
 	padding: var(--mobile--padding);
 }
 
-.section--text, .section--text--portfolio {
+.section--text {
 	line-height: 1.8rem;
+	padding-bottom: 0.5rem;
 	.section--paragraph {
 		margin: 0; padding-bottom: 1rem;
 	}
@@ -149,6 +151,17 @@ body {
 	color: var(--color--white);
 }
 
+.section--list {
+	padding: 0 0 0 2rem;
+}
+.home--portfolio--image, .portfolio--image--alt {
+	margin: 1rem auto 2rem auto;
+	display: block;
+	max-width: 300px;
+	width: 80%;
+}
+
+
 @import 'form';
 @import 'footer';
 
@@ -170,9 +183,9 @@ body {
 	.section--text {
 		padding: 4rem 0;
 		grid-column: 7/13;
-			&>* {
-				max-width: 500px;
-			}
+		&>* {
+			max-width: 500px;
+		}
 	}
 	.section--top--text {
 		padding-top: 2rem;
@@ -218,10 +231,16 @@ body {
 	.portfolio--text {
 		grid-row: 2/7;
 	}
+	.portfolio--image--alt {
+		padding: 2rem 2rem 0 4rem;
+		max-width: 50%;
+	}
+	.home--portfolio--image {
+		margin: 1rem 0 2rem 0;
+		padding: 1rem 0 0 0;
+	}
 }
-.section--list {
-	padding: 0 0 0 2rem;
-}
+
 @media screen and (min-width: 1024px) {
 	.section--header {
 		.header--two {
@@ -230,5 +249,8 @@ body {
 	}
 	.section--paragraph {
 		max-width: 75%;
+	}
+	.portfolio--image--alt {
+		padding: 2rem 0 0 4rem;
 	}
 }

@@ -20,6 +20,9 @@
   text-decoration: none;
   line-height: 1.4rem;
   text-align: left;
+  &:hover {
+    color: var(--color--very--off--white);
+  }
 }
 
 .footer--text {

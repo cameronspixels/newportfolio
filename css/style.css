@@ -5,6 +5,7 @@ If you'd like, you can find the uncompiled files .scss in the same directory. */
   --color--off--white: #F5F5F5;
   --color--very--off--white: #BDBDBD;
   --color--grey: #303036;
+  --color--off--grey: #1e1e20;
   --color--black: #0D0D0D;
   --color--red: #F00D2E;
   --color--darkred: #D20D2E;
@@ -386,62 +387,55 @@ body {
 
   .nav--blog .nav--link {
     color: var(--color--grey); } }
-.portfolio--image {
-  margin: 2rem 0 3rem 0;
-  height: 300px;
-  background-image: url(../img/ssg-desktop.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center;
-  max-width: 80%;
-  margin: 0 auto; }
-
-.section--image--portfolio {
-  margin: 0 20px 3rem 20px;
-  height: 200px;
-  position: relative;
-  overflow: hidden;
-  text-align: center; }
-
-.image--portfolio--image {
-  height: 100%;
-  display: block;
-  margin: 0 auto;
-  filter: grayscale(100%) blur(0.5px); }
-
-.image--portfolio--overlay {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -20%);
-  font-size: 2rem;
-  color: var(--color--white);
-  font-weight: 800;
-  text-shadow: 0px 3px 1px var(--color-black); }
-
-.button--container {
-  padding: 1rem 0 3rem 0; }
-
-.button--container--button {
-  margin: 0 auto;
-  padding: 0.4rem 0.8rem;
-  max-width: 200px;
+.portfolio--button {
+  margin: 1rem auto 2rem auto;
+  padding: 0.6rem 0.8rem;
   text-align: center;
   font-weight: 600;
   display: block;
+  max-width: 300px;
+  text-decoration: none; }
+
+.white--button {
   border: 2px solid var(--color--white);
   border-radius: 30px;
   background-color: var(--color--white);
   color: var(--color--grey); }
-  .button--container--button:hover {
+  .white--button:hover {
     background-color: var(--color--off--white);
     border-color: var(--color--off--white); }
 
-@media screen and (min-width: 800px) {
-  .button--container {
-    padding: 2rem 0 1rem 0;
-    max-width: 80%; }
+.black--button {
+  border: 2px solid var(--color--grey);
+  border-radius: 30px;
+  background-color: var(--color--grey);
+  color: var(--color--white); }
+  .black--button:hover {
+    background-color: var(--color--black);
+    border-color: var(--color--black); }
 
+.section--text--wrapper {
+  margin-bottom: 2rem;
+  text-align: center; }
+
+.portfolio--icon {
+  margin: 0.5rem 0.5rem 0.5rem 0;
+  display: inline-block;
+  height: 50px; }
+  .portfolio--icon:last-child {
+    margin-right: 0; }
+  .portfolio--icon:hover .icon--white {
+    fill: var(--color--very--off--white); }
+  .portfolio--icon:hover .icon--grey {
+    fill: var(--color--black); }
+
+.icon--grey {
+  fill: var(--color--grey); }
+
+.icon--white {
+  fill: var(--color--white); }
+
+@media screen and (min-width: 800px) {
   .section--header--portfolio {
     padding: 0;
     display: block;
@@ -450,12 +444,6 @@ body {
     width: 100%; }
     .section--header--portfolio .header--two {
       padding: 6rem 0 2rem 4rem; }
-
-  .section--text--portfolio {
-    grid-column: 1/7; }
-    .section--text--portfolio .section--paragraph {
-      padding-left: 4rem;
-      max-width: 100%; }
 
   .section--image--portfolio {
     margin: 6rem 2rem 4rem 2rem;
@@ -477,13 +465,22 @@ body {
   .image--portfolio--overlay {
     opacity: 0;
     transition: opacity 330ms ease-in-out;
-    font-size: 4rem; } }
-@media screen and (min-width: 1300px) {
-  .section--header--portfolio .header--two {
-    padding: 4rem 0 2rem 12rem; }
+    font-size: 4rem; }
 
-  .section--text--portfolio .section--paragraph {
-    padding-left: 12rem; } }
+  .portfolio--button {
+    width: 250px; }
+
+  .portfolio--icon {
+    margin: 0.5rem 1rem 1rem 0; }
+
+  .section--text--wrapper {
+    margin: 0.5rem 0 2rem 0;
+    text-align: center;
+    width: 75%; }
+
+  .portfolio--icon {
+    margin: 0.5rem 1rem 0.5rem 0;
+    height: 80px; } }
 .header--two--blog {
   padding: var(--mobile--padding);
   margin-top: 3rem;
@@ -625,26 +622,27 @@ body {
   text-decoration: none;
   border-bottom: 2px solid var(--color--grey); }
   .link--regular:hover {
-    color: var(--color--darkred);
-    border-color: var(--color--darkred); }
+    color: var(--color--black);
+    border-color: var(--color--black); }
 
 .link--alternative {
   color: var(--color--white);
   text-decoration: none;
   border-bottom: 2px solid var(--color--white); }
   .link--alternative:hover {
-    color: var(--color--blue);
-    border-color: var(--color--blue); }
+    color: var(--color--very--off--white);
+    border-color: var(--color--very--off--white); }
 
 .section--header, .section--text, .section--header--portfolio, .section--text--portfolio {
   padding: var(--mobile--padding); }
 
-.section--text, .section--text--portfolio {
-  line-height: 1.8rem; }
-  .section--text .section--paragraph, .section--text--portfolio .section--paragraph {
+.section--text {
+  line-height: 1.8rem;
+  padding-bottom: 0.5rem; }
+  .section--text .section--paragraph {
     margin: 0;
     padding-bottom: 1rem; }
-  .section--text .section--paragraph:last-child, .section--text--portfolio .section--paragraph:last-child {
+  .section--text .section--paragraph:last-child {
     padding-bottom: 3rem; }
 
 .container--primary {
@@ -714,6 +712,15 @@ body {
 .section--dark {
   background-color: var(--color--grey);
   color: var(--color--white); }
+
+.section--list {
+  padding: 0 0 0 2rem; }
+
+.home--portfolio--image, .portfolio--image--alt {
+  margin: 1rem auto 2rem auto;
+  display: block;
+  max-width: 300px;
+  width: 80%; }
 
 .form--label {
   display: block;
@@ -807,6 +814,8 @@ body {
   text-decoration: none;
   line-height: 1.4rem;
   text-align: left; }
+  .footer--nav--link:hover {
+    color: var(--color--very--off--white); }
 
 .footer--text {
   margin: 0;
@@ -902,15 +911,23 @@ body {
     grid-row: 2/7; }
 
   .portfolio--text {
-    grid-row: 2/7; } }
-.section--list {
-  padding: 0 0 0 2rem; }
+    grid-row: 2/7; }
 
+  .portfolio--image--alt {
+    padding: 2rem 2rem 0 4rem;
+    max-width: 50%; }
+
+  .home--portfolio--image {
+    margin: 1rem 0 2rem 0;
+    padding: 1rem 0 0 0; } }
 @media screen and (min-width: 1024px) {
   .section--header .header--two {
     padding: 0 0 0 4rem; }
 
   .section--paragraph {
-    max-width: 75%; } }
+    max-width: 75%; }
+
+  .portfolio--image--alt {
+    padding: 2rem 0 0 4rem; } }
 
 /*# sourceMappingURL=style.css.map */
