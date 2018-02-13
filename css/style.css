@@ -252,7 +252,7 @@ body {
 
 .nav--center {
   position: absolute;
-  top: 50%;
+  top: 40%;
   transform: translateY(-60%);
   width: 100%;
   padding: 0; }
@@ -416,7 +416,8 @@ body {
 
 .section--text--wrapper {
   margin-bottom: 2rem;
-  text-align: center; }
+  text-align: center;
+  max-width: 550px; }
 
 .portfolio--icon {
   margin: 0.5rem 0.5rem 0.5rem 0;
@@ -474,7 +475,7 @@ body {
     margin: 0.5rem 1rem 1rem 0; }
 
   .section--text--wrapper {
-    margin: 0.5rem 0 2rem 0;
+    margin: 2rem 0 2rem 0;
     text-align: center;
     width: 75%; }
 
@@ -728,7 +729,7 @@ body {
   font-size: 1.1rem; }
 
 .form--field, .form--field--box {
-  max-width: 650px;
+  max-width: 500px;
   width: 80%;
   padding: 8px 10px;
   margin-bottom: 24px;
@@ -761,7 +762,7 @@ body {
     cursor: pointer; }
 
 .form--label--hint {
-  max-width: 650px;
+  max-width: 500px;
   width: 80%; }
   .form--label--hint:last-child {
     padding-bottom: 3rem;
@@ -858,13 +859,13 @@ body {
     grid-column: 1/7;
     width: 100%; }
     .section--header .header--two {
-      padding: 0 2rem 0 4rem; }
+      margin: 0 auto;
+      padding: 0 2rem 0 4rem;
+      max-width: 80%; }
 
   .section--text {
     padding: 4rem 0;
     grid-column: 7/13; }
-    .section--text > * {
-      max-width: 500px; }
 
   .section--top--text {
     padding-top: 2rem; }
@@ -919,13 +920,14 @@ body {
 
   .home--portfolio--image {
     margin: 1rem 0 2rem 0;
-    padding: 1rem 0 0 0; } }
+    padding: 1rem 0 0 0;
+    max-width: 60%; } }
 @media screen and (min-width: 1024px) {
   .section--header .header--two {
     padding: 0 0 0 4rem; }
 
   .section--paragraph {
-    max-width: 75%; }
+    max-width: 550px; }
 
   .portfolio--image--alt {
     padding: 2rem 0 0 4rem; } }
