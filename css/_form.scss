@@ -42,8 +42,7 @@
 
 @media screen and (min-width: 800px) {
 	.form--contact {
-		max-width: 800px;
-		margin-top: 2rem;
+		max-width: 500px;
 		.input--name, .input--email {
 			margin: 0;
 			width: 50%; float: left;
@@ -60,6 +59,7 @@
 		max-width: 100%;
 	}
 	.form--field--box {
+		height: 150px;
 		margin-bottom: 3rem;
 	}
 }

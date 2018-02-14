@@ -171,7 +171,7 @@ body {
 		grid-template-columns: repeat(12, 1fr);
 	}
 	.section--header {
-		padding: 6rem 0;
+		padding: 5rem 0 4rem 0;
 		display: block;
 		text-align: center;
 		grid-column: 1/7;
@@ -183,7 +183,7 @@ body {
 		}
 	}
 	.section--text {
-		padding: 4rem 0;
+		padding: 5rem 0 4rem 0;
 		grid-column: 7/13;
 	}
 	.section--top--text {
@@ -191,8 +191,9 @@ body {
 	}
 	.section--paragraph {
 		margin: 0 auto;
+		padding: 0 2rem;
 		text-align: left;
-		max-width: 90%;
+		max-width: 500px;
 		font-size: 1.1rem; line-height: 2.2rem;
 	}
 	.social--anchor {
@@ -235,12 +236,18 @@ body {
 		max-width: 50%;
 	}
 	.home--portfolio--image {
-		margin: 1rem 0 2rem 0;
-		padding: 1rem 0 0 0;
+		margin: 0 0 2rem 0;
+		padding: 0;
 		max-width: 60%;
 	}
+	.homepage--wrapper {
+		width: 60%;
+		margin: 0;
+	}
+	.section--list {
+		margin-left: 2rem;
+	}
 }
-
 @media screen and (min-width: 1024px) {
 	.section--header {
 		.header--two {
@@ -248,7 +255,7 @@ body {
 		}
 	}
 	.section--paragraph {
-		max-width: 550px;
+		margin: 0 auto;
 	}
 	.portfolio--image--alt {
 		padding: 2rem 0 0 4rem;

@@ -27,7 +27,6 @@
 .section--text--wrapper {
   margin-bottom: 2rem;
   text-align: center;
-  max-width: 550px;
 }
 
 .portfolio--icon {
@@ -100,9 +99,11 @@
     margin: 0.5rem 1rem 1rem 0;
   }
   .section--text--wrapper {
-    margin: 2rem 0 2rem 0;
+    margin: 2rem 0 0 0;
+    padding: 0 2rem;
     text-align: center;
     width: 75%;
+    max-width: 500px;
   }
   .portfolio--icon {
     margin: 0.5rem 1rem 0.5rem 0;
