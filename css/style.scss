@@ -30,6 +30,11 @@ body {
 	@include fonts; font-size: 100%; font-weight: 500;
 }
 
+main {
+	overflow: hidden;
+
+}
+
 @import 'header';
 @import 'nav';
 @import 'portfolio';
@@ -144,6 +149,7 @@ body {
 	display: block;
 	text-decoration: none; 
 	background-color: var(--color--white);
+	overflow: hidden;
 	&:hover {
 		background-color: var(--color--off--white);
 	}
@@ -273,7 +279,7 @@ body {
 		max-width: 60%;
 	}
 	.homepage--wrapper {
-		width: 60%;
+		max-width: 60%;
 		margin: 0;
 	}
 	.section--list {
@@ -293,3 +299,10 @@ body {
 		padding: 2rem 0 0 4rem;
 	}
 }
+
+@media screen and (min-width: 1350px) {
+	.section--paragraph {
+		max-width: 700px;
+	}
+
+}	

@@ -5,6 +5,7 @@
   display: block;
   max-width: 300px; 
   text-decoration: none;
+  transition: all 220ms ease-in-out;
 }
 
 .white--button {
@@ -12,7 +13,7 @@
 	background-color: var(--color--white); color: var(--color--grey);
 	&:hover {
 		background-color: var(--color--off--white);
-		border-color: var(--color--off--white);
+    border-color: var(--color--off--white);
 	}
 }
 .black--button {
@@ -20,7 +21,7 @@
   background-color: var(--color--grey); color: var(--color--white);
 	&:hover {
 		background-color: var(--color--black);
-		border-color: var(--color--black);
+    border-color: var(--color--black);
 	}
 }
 
@@ -108,5 +109,14 @@
   .portfolio--icon {
     margin: 0.5rem 1rem 0.5rem 0;
     height: 80px;
+  }
+}
+
+@media screen and (min-width: 1350px) {
+  .section--text--wrapper {
+    max-width: 700px;
+  }
+  .portfolio--icon {
+    margin: 1.5rem 1rem 2rem 0;
   }
 }

@@ -301,18 +301,6 @@
 		text-indent: 0;
 		color: var(--color--off--white);
 		position: relative;
-		/*
-		&::after {
-			border-top: .11rem solid var(--color--off--white);
-			position: absolute;
-			left: .5rem;
-			right: .5rem;
-			bottom: .5rem;
-			content: '';
-		}
-		*/
-		&:hover {
-		}
 	}
 	.nav--active {
 		text-decoration: underline;

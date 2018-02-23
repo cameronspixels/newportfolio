@@ -46,17 +46,18 @@
   font-weight: 700;
 }
 .blog--nav--link {
-  text-decoration: none;
+  text-decoration: underline;
   color: var(--color--grey);
   display: block;
   margin-bottom: 0.5rem;
+  font-weight: 500;
   &:hover {
     color: var(--color--blue);
   }
 }
 .blog--nav--intro {
   margin-bottom: 1rem;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 @media screen and (min-width: 510px) {

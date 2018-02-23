@@ -17,7 +17,7 @@
 
 .footer--nav--link {
   color: var(--color--white);
-  text-decoration: none;
+  text-decoration: underline;
   line-height: 1.4rem;
   text-align: left;
   &:hover {
@@ -39,14 +39,12 @@
     cursor: pointer;
     .footer--logo--white {
     fill: var(--color--very--off--white);
-    transition: fill 330ms ease-in-out;
     } 
   }
 }
 
 .footer--logo--white {
   fill: var(--color--white);
-  transition: fill 330ms ease-in-out;
 }
 
 @media screen and (min-width: 800px) {
