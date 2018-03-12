@@ -59,6 +59,9 @@
   margin-bottom: 1rem;
   text-decoration: none;
 }
+.blog--post--header {
+  margin: 2rem 0 1.5rem 0;
+}
 
 @media screen and (min-width: 510px) {
   .blog--nav {
@@ -98,6 +101,7 @@
     grid-column: 3/11;
     .section--paragraph {
       max-width: 90%;
+      margin-bottom: 1.5rem;
     }
   }
   .blog--figure {
@@ -107,23 +111,27 @@
       width: 100%;
     }
   }
-}
-
-.link--to--top {
-  margin: 1rem 0 2rem 0;
-  display: inline-block;
+  .blog--post--header {
+    padding: 0 2rem;
+  }
+  .link--to--top {
+    margin: 1rem 0 2rem 0;
+    display: inline-block;
+  }  
 }
 
 @media screen and (min-width: 1024px) {
   .section--text--blog {
     max-width: 800px;
   }
+  .blog--post--header {
+    max-width: 90%;
+    margin: 2.5rem auto 1.5rem auto;
+  }
+  .link--to--top {
+    margin: 2rem 0 3rem 0;
+  }  
 }
-
-.link--to--top {
-  margin: 2rem 0 3rem 0;
-}
-
 @media screen and (min-width: 1300px) {
   .header--two--blog {
     grid-column: 4/9;

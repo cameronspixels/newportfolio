@@ -43,11 +43,13 @@ main {
 .header--one {
 	margin: 0; padding: 0;
 	font-weight: 800; font-size: 4rem;
+	letter-spacing: -1px;
 }
 
 .header--two {
 	margin: 0; padding: 3rem 0 2rem 0;
 	font-weight: 800; font-size: 2rem;
+	letter-spacing: -1px;
 }
 .left--align {
 	text-align: left;
@@ -258,7 +260,7 @@ main {
 		padding: 0;
 	}
 	.header--subpage {
-		letter-spacing: 4px;
+		letter-spacing: 1px;
 	}
 	.section--holding {
 		padding: 100px 0;
