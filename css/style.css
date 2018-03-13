@@ -561,6 +561,9 @@ main {
     right: 20px;
     top: 0;
     margin: 0; } }
+.blog--code--indent {
+  padding-left: 1rem; }
+
 @media screen and (min-width: 800px) {
   .blog--nav {
     margin-top: 5rem;
@@ -604,7 +607,12 @@ main {
 
   .link--to--top {
     margin: 1rem 0 2rem 0;
-    display: inline-block; } }
+    display: inline-block; }
+
+  .blog--code {
+    margin: 1rem auto 2rem auto;
+    width: calc(100% - 4rem);
+    display: block; } }
 @media screen and (min-width: 1024px) {
   .section--text--blog {
     max-width: 800px; }
@@ -614,7 +622,10 @@ main {
     margin: 2.5rem auto 1.5rem auto; }
 
   .link--to--top {
-    margin: 2rem 0 3rem 0; } }
+    margin: 2rem 0 3rem 0; }
+
+  .blog--code {
+    width: calc(100% - 5rem); } }
 @media screen and (min-width: 1300px) {
   .header--two--blog {
     grid-column: 4/9; }

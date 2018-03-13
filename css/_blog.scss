@@ -71,6 +71,9 @@
     margin: 0;
   }
 }
+.blog--code--indent {
+  padding-left: 1rem;
+}
 
 @media screen and (min-width: 800px) {
   .blog--nav {
@@ -118,6 +121,11 @@
     margin: 1rem 0 2rem 0;
     display: inline-block;
   }  
+  .blog--code {
+    margin: 1rem auto 2rem auto;
+    width: calc(100% - 4rem);
+    display: block;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -131,6 +139,9 @@
   .link--to--top {
     margin: 2rem 0 3rem 0;
   }  
+  .blog--code {
+    width: calc(100% - 5rem);
+  }
 }
 @media screen and (min-width: 1300px) {
   .header--two--blog {
