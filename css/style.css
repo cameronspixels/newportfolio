@@ -555,15 +555,21 @@ main {
 .blog--post--header {
   margin: 2rem 0 1.5rem 0; }
 
+.blog--code--indent {
+  padding-left: 1rem; }
+
+.blog--code--indent--more {
+  padding-left: 2rem; }
+
+.codepen--embed {
+  height: 600px; }
+
 @media screen and (min-width: 510px) {
   .blog--nav {
     position: absolute;
     right: 20px;
     top: 0;
     margin: 0; } }
-.blog--code--indent {
-  padding-left: 1rem; }
-
 @media screen and (min-width: 800px) {
   .blog--nav {
     margin-top: 5rem;
