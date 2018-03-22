@@ -23,7 +23,7 @@ body {
   padding: 0;
   background-color: var(--color--white);
   color: var(--color--grey);
-  font-family: 'Raleway', 'Helvetica Neue', 'Arial', 'Ubuntu', sans-serif;
+  font-family: 'Avenir Next', 'Raleway', 'Helvetica Neue', 'Arial', 'Ubuntu', sans-serif;
   font-size: 100%;
   font-weight: 500; }
 
@@ -59,7 +59,7 @@ main {
   max-width: 1300px; }
 
 .header--tagline {
-  font-weight: 800;
+  font-weight: 700;
   font-size: 2rem; }
 
 .link--skip {
@@ -121,7 +121,6 @@ main {
     height: 100vh; }
 
   .header--tagline {
-    font-weight: 800;
     font-size: 2.4rem;
     text-align: right; }
 
@@ -246,7 +245,8 @@ main {
 .nav--link {
   text-decoration: none;
   font-size: 36px;
-  font-weight: 800;
+  font-weight: 700;
+  letter-spacing: -1px;
   line-height: 4.5rem;
   width: 100%;
   display: block;
@@ -256,7 +256,7 @@ main {
 .nav--center {
   position: absolute;
   top: 40%;
-  transform: translateY(-60%);
+  transform: translateY(-55%);
   width: 100%;
   padding: 0; }
 
@@ -497,11 +497,12 @@ main {
 .header--two--blog {
   padding: var(--mobile--padding);
   margin-top: 3rem;
-  font-weight: 800;
+  font-weight: 700;
+  letter-spacing: -1px;
   font-size: 2rem; }
 
 .blog--info--date {
-  margin: 2rem 0 0.5rem 0;
+  margin: 1rem 0 0.5rem 0;
   font-size: 0.8rem;
   font-weight: 500;
   padding: var(--mobile--padding); }
@@ -581,10 +582,9 @@ main {
     display: inline-block; }
 
   .header--two--blog {
-    margin: 4rem 0 1rem 0;
+    margin: 4rem 0 .5rem 0;
     font-size: 3.6rem;
-    grid-column: 3/8;
-    grid-row-start: 1; }
+    grid-column: 3/-1; }
 
   .blog--info--date {
     grid-column: 3/8; }
@@ -634,7 +634,7 @@ main {
     width: calc(100% - 5rem); } }
 @media screen and (min-width: 1300px) {
   .header--two--blog {
-    grid-column: 4/9; }
+    grid-column: 4/-1; }
 
   .blog--info--date {
     grid-column: 4/9; }
@@ -647,31 +647,20 @@ main {
 .header--one {
   margin: 0;
   padding: 0;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 4rem;
   letter-spacing: -1px; }
 
 .header--two {
   margin: 0;
   padding: 3rem 0 2rem 0;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 2rem;
   letter-spacing: -1px; }
 
 .left--align {
   text-align: left; }
 
-/*
-.link--regular {
-	color: var(--color--grey);
-	text-decoration: none;
-	border-bottom: 2px solid var(--color--grey);
-	&:hover {
-		color: var(--color--black);
-		border-color: var(--color--black);
-	}
-}
-*/
 .link--regular {
   color: var(--color--grey);
   text-decoration: none;
@@ -748,7 +737,7 @@ main {
   margin: 0;
   padding: 2rem 0;
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 800;
   color: var(--color--twitter--blue);
   text-align: center; }
 
@@ -756,7 +745,7 @@ main {
   margin: 0;
   padding: 3rem 0 0 0;
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--color--grey);
   text-align: center; }
 
@@ -764,7 +753,7 @@ main {
   margin: 0;
   padding: 2rem 0 3rem 0;
   font-size: 1.8rem;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--color--red);
   text-align: center; }
 
@@ -811,7 +800,7 @@ main {
   border-radius: 2px;
   font-size: 16px;
   font-weight: 500;
-  font-family: 'Raleway', 'Helvetica Neue', 'Arial', 'Ubuntu', sans-serif;
+  font-family: 'Avenir Next', 'Raleway', 'Helvetica Neue', 'Arial', 'Ubuntu', sans-serif;
   resize: none; }
   .form--field:focus, .form--field--box:focus {
     outline: 3px solid var(--color--yellow); }
@@ -823,7 +812,7 @@ main {
   background-color: var(--color--white);
   color: var(--color--grey);
   font-size: 1rem;
-  font-family: 'Raleway', 'Helvetica Neue', 'Arial', 'Ubuntu', sans-serif;
+  font-family: 'Avenir Next', 'Raleway', 'Helvetica Neue', 'Arial', 'Ubuntu', sans-serif;
   font-weight: 500;
   text-align: center;
   border: none;
@@ -959,13 +948,11 @@ main {
     min-height: 200px; }
 
   .social--anchor--page--text {
-    font-size: 2rem;
-    font-weight: 600; }
+    font-size: 2rem; }
 
   .header--one {
     margin: 0;
     text-align: left;
-    font-weight: 800;
     font-size: 6rem; }
 
   .header--two {

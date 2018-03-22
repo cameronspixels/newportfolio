@@ -21,7 +21,7 @@ If you'd like, you can find the uncompiled files .scss in the same directory. */
 }
 
 @mixin fonts {
-	font-family: 'Raleway', 'Helvetica Neue', 'Arial', 'Ubuntu', sans-serif;
+	font-family: 'Avenir Next', 'Raleway', 'Helvetica Neue', 'Arial', 'Ubuntu', sans-serif;
 }
 
 body {
@@ -32,7 +32,6 @@ body {
 
 main {
 	overflow: hidden;
-
 }
 
 @import 'header';
@@ -42,30 +41,18 @@ main {
 
 .header--one {
 	margin: 0; padding: 0;
-	font-weight: 800; font-size: 4rem;
+	font-weight: 700; font-size: 4rem;
 	letter-spacing: -1px;
 }
 
 .header--two {
 	margin: 0; padding: 3rem 0 2rem 0;
-	font-weight: 800; font-size: 2rem;
+	font-weight: 700; font-size: 2rem;
 	letter-spacing: -1px;
 }
 .left--align {
 	text-align: left;
 }
-
-/*
-.link--regular {
-	color: var(--color--grey);
-	text-decoration: none;
-	border-bottom: 2px solid var(--color--grey);
-	&:hover {
-		color: var(--color--black);
-		border-color: var(--color--black);
-	}
-}
-*/
 
 .link--regular {
 	color: var(--color--grey);
@@ -158,19 +145,19 @@ main {
 }
 .social--anchor--text {
 	margin: 0; padding: 2rem 0;
-	font-size: 1.5rem; font-weight: 600;
+	font-size: 1.5rem; font-weight: 800;
 	color: var(--color--twitter--blue);
 	text-align: center;
 }
 .social--anchor--page--intro {
 	margin: 0; padding: 3rem 0 0 0;
-	font-size: 1.2rem; font-weight: 600;
+	font-size: 1.2rem; font-weight: 700;
 	color: var(--color--grey);
 	text-align: center;
 }
 .social--anchor--page--text {
 	margin: 0; padding: 2rem 0 3rem 0;
-	font-size: 1.8rem; font-weight: 600;
+	font-size: 1.8rem; font-weight: 700;
 	color: var(--color--red);
 	text-align: center;
 }
@@ -248,12 +235,12 @@ main {
 		min-height: 200px;
 	}
 	.social--anchor--page--text {
-		font-size: 2rem; font-weight: 600;
+		font-size: 2rem;
 	}
 	.header--one {
 		margin: 0;
 		text-align: left;
-		font-weight: 800; font-size: 6rem; 
+		font-size: 6rem; 
 	}
 	.header--two {
 		font-size: 3.6rem;

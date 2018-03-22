@@ -1,11 +1,11 @@
 .header--two--blog {
   padding: var(--mobile--padding);
   margin-top: 3rem;
-  font-weight: 800;
+  font-weight: 700; letter-spacing: -1px;
   font-size: 2rem;
 }
 .blog--info--date {
-  margin: 2rem 0 0.5rem 0;
+  margin: 1rem 0 0.5rem 0;
   font-size: 0.8rem; font-weight: 500;
   padding: var(--mobile--padding);
 }
@@ -92,10 +92,9 @@
     display: inline-block;
   }
   .header--two--blog {
-    margin: 4rem 0 1rem 0;
+    margin: 4rem 0 .5rem 0;
     font-size: 3.6rem;
-    grid-column: 3/8;
-    grid-row-start: 1;
+    grid-column: 3/-1;
   }
   .blog--info--date {
     grid-column: 3/8;
@@ -151,7 +150,7 @@
 }
 @media screen and (min-width: 1300px) {
   .header--two--blog {
-    grid-column: 4/9;
+    grid-column: 4/-1;
   }
   .blog--info--date {
     grid-column: 4/9;
