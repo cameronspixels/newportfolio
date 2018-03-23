@@ -75,12 +75,6 @@
 	transform: translateX(-45%);
 	animation: hovering 10s infinite;
 }
-.header--indicator--fill {
-	fill: var(--color--white);
-}
-.header--indicator--fill--alt {
-	fill: var(--color--grey);
-}
 
 @keyframes hovering {
 	0% {
