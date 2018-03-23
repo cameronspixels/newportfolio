@@ -3,13 +3,11 @@
 	position: relative;
 	height: 90vh;
 }
-
 .header--primary {
 	@include header-stuff;
 	background-color: var(--color--darkred);
 	color: var(--color--white);
 }
-
 .header--sub--1 {
 	@include header-stuff;
 	background-color: var(--color--darkblue);
@@ -20,7 +18,6 @@
 	background-color: var(--color--bg--yellow);
 	color: var(--color--grey);
 }
-
 .header--primary--content {
 	position: absolute;
 	top: 50%;
@@ -28,11 +25,9 @@
 	width: 90%; 
 	max-width: 1300px;
 }
-
 .header--tagline {
 	font-weight: 700; font-size: 2rem;
 }
-
 .link--skip {
 	height: 1px;
 	width: 1px;
@@ -40,11 +35,6 @@
 	left: 0;
 	top: -500px;
 }
-
-.button--primary {
-	display: none;
-}
-
 @keyframes flasher {
 	0% {
 		opacity: 1;
@@ -62,11 +52,9 @@
 		opacity: 1;
 	}
 }
-
 .flashing {
 	opacity: 1; animation: flasher 990ms infinite;
 }
-
 .header--indicator {
 	width: 40px;
 	position: absolute;
@@ -75,7 +63,6 @@
 	transform: translateX(-45%);
 	animation: hovering 10s infinite;
 }
-
 @keyframes hovering {
 	0% {
 		transform: translateY(0px);
@@ -99,7 +86,6 @@
 		transform: translateY(0px);
 	}
 }
-
 @media screen and (min-width: 800px) {
 	.header--primary, .header--sub--1, .header--sub--2 {
 		height: 100vh;

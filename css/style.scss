@@ -1,6 +1,5 @@
 /* I write with SASS and apologise if this complies in flames.
 If you'd like, you can find the uncompiled files .scss in the same directory. */
-
 :root {
 	--color--white: #FFF;
 	--color--off--white: #F5F5F5;
@@ -19,32 +18,24 @@ If you'd like, you can find the uncompiled files .scss in the same directory. */
 	--color--twitter--blue: #00aced;
 	--mobile--padding: 0 20px;
 }
-
 @mixin fonts {
 	font-family: 'Avenir Next', 'Raleway', 'Helvetica Neue', 'Arial', 'Ubuntu', sans-serif;
 }
-
 body {
 	margin: 0; padding: 0;
 	background-color: var(--color--white); color: var(--color--grey);
 	@include fonts; font-size: 100%; font-weight: 500;
 }
-
 main {
 	overflow: hidden;
 }
-
 @import 'header';
 @import 'nav';
-@import 'portfolio';
-@import 'blog';
-
 .header--one {
 	margin: 0; padding: 0;
 	font-weight: 700; font-size: 4rem;
 	letter-spacing: -1px;
 }
-
 .header--two {
 	margin: 0; padding: 3rem 0 2rem 0;
 	font-weight: 700; font-size: 2rem;
@@ -53,7 +44,6 @@ main {
 .left--align {
 	text-align: left;
 }
-
 .link--regular {
 	color: var(--color--grey);
 	text-decoration: none;
@@ -73,7 +63,6 @@ main {
 		}
 	}
 }
-
 .link--alternative {
 	color: var(--color--white);
 	text-decoration: none;
@@ -93,11 +82,9 @@ main {
 		}
 	}
 }
-
 .section--header, .section--text, .section--header--portfolio, .section--text--portfolio {
 	padding: var(--mobile--padding);
 }
-
 .section--text {
 	line-height: 1.8rem;
 	padding-bottom: 0.5rem;
@@ -127,11 +114,6 @@ main {
 	24% {
 		transform: scale(1);
 	}
-}
-.social--anchor {
-	height: 100%;
-	display: block;
-	text-decoration: none; 
 }
 .social--anchor--page {
 	height: 100%;
@@ -167,30 +149,17 @@ main {
 	height: 60px;
 	animation: social--animation 6000ms infinite;
 }
-.logo--white--fill {
-	fill: var(--color--twitter--blue);
-}
-.background--twitter {
-	background-color: var(--color--white);
-}
 .section--dark {
 	background-color: var(--color--grey);
 	color: var(--color--white);
 }
-
 .section--list {
 	padding: 0 0 0 2rem;
 }
-.home--portfolio--image, .portfolio--image--alt {
-	margin: 1rem auto 2rem auto;
-	display: block;
-	max-width: 300px;
-	width: 80%;
-}
-
+@import 'portfolio';
+@import 'blog';
 @import 'form';
 @import 'footer';
-
 @media screen and (min-width: 800px) {
 	.container--primary {
 		display: grid;
@@ -222,13 +191,6 @@ main {
 		max-width: 500px;
 		font-size: 1.1rem; line-height: 2.2rem;
 	}
-	.social--anchor {
-		grid-column: 1/-1;
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		align-content: center;
-		height: 200px;
-	}
 	.social--anchor--page {
 		grid-column: 1/-1;
 		min-height: 200px;
@@ -251,25 +213,6 @@ main {
 	.section--holding {
 		padding: 100px 0;
 	}
-	.portfolio--header {
-		grid-row: 2/7;
-	}
-	.portfolio--text {
-		grid-row: 2/7;
-	}
-	.portfolio--image--alt {
-		padding: 2rem 2rem 0 4rem;
-		max-width: 50%;
-	}
-	.home--portfolio--image {
-		margin: 0 2rem 2rem 2rem;
-		padding: 0;
-		max-width: 60%;
-	}
-	.homepage--wrapper {
-		max-width: 60%;
-		margin: 0;
-	}
 	.section--list {
 		margin-left: 2rem;
 	}
@@ -283,11 +226,7 @@ main {
 	.section--paragraph {
 		margin: 0 auto;
 	}
-	.portfolio--image--alt {
-		padding: 2rem 0 0 4rem;
-	}
 }
-
 @media screen and (min-width: 1350px) {
 	.section--paragraph {
 		max-width: 700px;

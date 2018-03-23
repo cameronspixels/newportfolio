@@ -3,18 +3,15 @@
   background-color: var(--color--grey);
   color: var(--color--white);
 }
-
 .footer--primary--container {
   text-align: center;
   margin: 0 auto;
   padding: 0 1rem;
 }
-
 .footer--nav {
   margin: 0; padding: 1rem 0 0 0;
   list-style-type: none;
 }
-
 .footer--nav--link {
   color: var(--color--white);
   text-decoration: underline;
@@ -24,29 +21,23 @@
     color: var(--color--very--off--white);
   }
 }
-
 .footer--text {
   margin: 0; padding: 1rem 0 2rem 0;
   font-size: 1.2rem; font-weight: 500; line-height: 1.8rem;
   text-align: center;
 }
-
 .footer--social {
   margin: 2rem 0.5rem 0 0.5rem; padding: 0;
   height: 2rem;
   display: inline-block;
+  transform: none;
+  transition: transform 1200ms cubic-bezier(0.075, 0.82, 0.165, 1);
   &:hover {
     cursor: pointer;
-    .footer--logo--white {
-    fill: var(--color--very--off--white);
-    } 
+    transform: scale(1.15);
+    transition: transform 1200ms cubic-bezier(0.075, 0.82, 0.165, 1);
   }
 }
-
-.footer--logo--white {
-  fill: var(--color--white);
-}
-
 @media screen and (min-width: 800px) {
   .footer--social {
   margin: 3rem 0.5rem 0 0.5rem;
