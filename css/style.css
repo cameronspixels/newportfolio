@@ -582,6 +582,40 @@ main {
 
   .portfolio--icon {
     margin: 1.5rem 1rem 2rem 0; } }
+.portfolio--grid {
+  padding: var(--mobile--padding); }
+  .portfolio--grid .portfolio--grid--item:last-child {
+    padding-bottom: 3rem; }
+
+.red {
+  background-color: red; }
+
+.blue {
+  background-color: blue; }
+
+.green {
+  background-color: green; }
+
+.yellow {
+  background-color: yellow; }
+
+@media screen and (min-width: 800px) {
+  .portfolio--grid {
+    padding-bottom: 3rem;
+    grid-column: 1/-1;
+    display: grid;
+    grid-gap: 1rem;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-auto-flow: row dense; }
+
+  .grid--heading {
+    grid-column: 1/-1;
+    margin: 5rem 0 4rem 0;
+    text-align: center; }
+
+  .portfolio--grid--item {
+    padding: 2rem 1rem; } }
 .header--two--blog {
   padding: var(--mobile--padding);
   margin-top: 3rem;
