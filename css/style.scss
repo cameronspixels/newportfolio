@@ -8,12 +8,17 @@ If you'd like, you can find the uncompiled files .scss in the same directory. */
 	--color--off--grey: #1e1e20;
 	--color--black: #0D0D0D;
 	--color--red: #F00D2E;
-	--color--darkred: #D20D2E;
+	// --color--darkred: #D20D2E;
+	--color--darkred: linear-gradient(to bottom right, #D20D2E, rgb(212, 53, 151));
 	--color--blue: #1495CC;
-	--color--darkblue: #0980B2;
+	// --color--darkblue: #0980B2;
+	--color--darkblue: linear-gradient(to bottom right, #0980B2, rgb(0, 202, 51));
 	--color--yellow: #FFBF47;
-	--color--bg--yellow: #FFF419;
+	// --color--bg--yellow: #FFF419;
+	--color--bg--yellow: linear-gradient(to bottom right, #FFF419, rgb(255, 138, 29));
 	--color--bg--yellow--2: #e6bf13;
+	// --color--green: rgb(89, 43, 141);
+	--color--green: linear-gradient(to bottom right, rgb(89, 43, 141), rgb(199, 0, 189));
 	--color--none: rgba(0,0,0,0);
 	--color--twitter--blue: #00aced;
 	--mobile--padding: 0 20px;
@@ -23,7 +28,7 @@ If you'd like, you can find the uncompiled files .scss in the same directory. */
 }
 body {
 	margin: 0; padding: 0;
-	background-color: var(--color--white); color: var(--color--grey);
+	background: var(--color--white); color: var(--color--grey);
 	@include fonts; font-size: 100%; font-weight: 500;
 }
 main {
@@ -33,12 +38,13 @@ main {
 @import 'nav';
 .header--one {
 	margin: 0; padding: 0;
-	font-weight: 700; font-size: 4rem;
+	font-weight: 700; font-size: 4.236rem;
+	line-height: 1.115;
 	letter-spacing: -1px;
 }
 .header--two {
-	margin: 0; padding: 3rem 0 2rem 0;
-	font-weight: 700; font-size: 2rem;
+	margin: 0; padding: 5rem 0 2rem 0;
+	font-weight: 700; font-size: 2.618rem;
 	letter-spacing: -1px;
 }
 .left--align {
@@ -86,12 +92,12 @@ main {
 	padding: var(--mobile--padding);
 }
 .section--text {
-	line-height: 1.8rem;
-	padding-bottom: 0.5rem;
+	line-height: 1.5;
+	padding-bottom: 2rem;
 	.section--paragraph {
-		margin: 0; padding-bottom: 1rem;
+		margin: 0; padding-bottom: 2rem;
 	}
-	.section--paragraph:last-child {
+	.section--paragraph:last-child, .section--list:last-child {
 		padding-bottom: 3rem;
 	}
 }
@@ -180,6 +186,7 @@ main {
 	.section--text {
 		padding: 5rem 0 4rem 0;
 		grid-column: 7/13;
+		line-height: 1.75;
 	}
 	.section--top--text {
 		padding-top: 2rem;
@@ -188,8 +195,8 @@ main {
 		margin: 0 auto;
 		padding: 0 2rem;
 		text-align: left;
-		max-width: 500px;
-		font-size: 1.1rem; line-height: 2.2rem;
+		max-width: 600px;
+		font-size: 1.1rem;
 	}
 	.social--anchor--page {
 		grid-column: 1/-1;
@@ -201,14 +208,14 @@ main {
 	.header--one {
 		margin: 0;
 		text-align: left;
-		font-size: 6rem; 
+		font-size: 6.854rem; 
 	}
 	.header--two {
-		font-size: 3.6rem;
+		font-size: 4.236rem;
 		padding: 0;
 	}
 	.header--subpage {
-		letter-spacing: 1px;
+		letter-spacing: -1px;
 	}
 	.section--holding {
 		padding: 100px 0;
@@ -227,9 +234,3 @@ main {
 		margin: 0 auto;
 	}
 }
-@media screen and (min-width: 1350px) {
-	.section--paragraph {
-		max-width: 700px;
-	}
-
-}	
