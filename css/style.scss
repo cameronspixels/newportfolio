@@ -15,7 +15,7 @@ If you'd like, you can find the uncompiled files .scss in the same directory. */
 	--color--darkblue: linear-gradient(to bottom right, #0980B2, rgb(0, 202, 51));
 	--color--yellow: #FFBF47;
 	// --color--bg--yellow: #FFF419;
-	--color--bg--yellow: linear-gradient(to bottom right, #FFF419, rgb(255, 138, 29));
+	--color--bg--yellow: linear-gradient(to bottom right, #FFF419, rgb(255, 163, 25));
 	--color--bg--yellow--2: #e6bf13;
 	// --color--green: rgb(89, 43, 141);
 	--color--green: linear-gradient(to bottom right, rgb(89, 43, 141), rgb(199, 0, 189));
@@ -97,8 +97,14 @@ main {
 	.section--paragraph {
 		margin: 0; padding-bottom: 2rem;
 	}
+	.section--list {
+		padding-bottom: 2rem;
+	}
 	.section--paragraph:last-child, .section--list:last-child {
 		padding-bottom: 3rem;
+	}
+	.list--paragraph {
+		padding-bottom: 1rem;
 	}
 }
 .container--primary {

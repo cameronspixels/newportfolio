@@ -8,12 +8,45 @@
 
 .portfolio--grid {
   padding: var(--mobile--padding);
-  .portfolio--grid--item {
-    padding: 2rem 1rem 3rem 1rem;
-    &:last-child {
-      margin-bottom: 3rem;
-    }
+}
+
+.portfolio--grid--item {
+  max-height: 350px;
+  position: relative;
+  height: auto;
+  width: auto;
+  overflow: hidden;
+}
+
+.grid--item--wrapper {
+  padding: 2rem 1rem 3rem 1rem;
+  position: absolute;
+  top: 45%;
+  transform: translateY( -50%);
+  z-index: 4;
+  color: #FFF;
+  &:last-child {
+    margin-bottom: 3rem;
   }
+}
+
+.item--heading {
+  font-size: 1.4rem;
+
+}
+
+.item--desc {
+  max-width: 550px;
+}
+
+.item--link {
+  color: var(--grey);
+}
+
+.item--img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .red {
@@ -56,7 +89,7 @@
     grid-column: 1/-1;
     display: grid;
     grid-gap: 1rem;
-    grid-auto-rows: auto;
+    grid-auto-rows: 350px;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-flow: row;
     .portfolio--grid--item {
@@ -70,8 +103,8 @@
     margin: 5rem 0 4rem 0;
     text-align: center;
   }
-  .portfolio--grid--item {
-    padding: 2rem 1rem;
+  .grid--item--wrapper {
+    left: 2rem;
   }
   .portfolio--button {
     width: 250px;
