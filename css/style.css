@@ -440,7 +440,7 @@ main {
     .link--alternative:hover::after {
       border-color: var(--color--very--off--white); }
 
-.section--header, .section--text, .section--header--portfolio, .section--text--portfolio {
+.section--header, .section--text {
   padding: var(--mobile--padding); }
 
 .section--text {
