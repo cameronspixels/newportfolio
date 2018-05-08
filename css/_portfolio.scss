@@ -16,41 +16,42 @@
 }
 
 .portfolio--grid--item {
-  max-height: 350px;
+  max-height: 300px;
   position: relative;
   height: auto;
   width: auto;
   overflow: hidden;
+  &:last-child {
+    margin-bottom: 5rem;
+  }
 }
 
 .grid--item--wrapper {
   padding: 2rem 1rem 3rem 1rem;
   position: absolute;
-  top: 45%;
+  top: 50%;
   transform: translateY( -50%);
   z-index: 4;
   color: #FFF;
-  &:last-child {
-    margin-bottom: 3rem;
-  }
 }
 
 .item--heading {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 
 }
 
 .item--desc {
   max-width: 550px;
+  font-size: .9rem;
 }
 
 .item--link {
   color: var(--grey);
+  font-size: .9rem;
 }
 
 .item--img {
   height: 100%;
-  width: 100%;
   object-fit: cover;
 }
 
