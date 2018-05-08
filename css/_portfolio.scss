@@ -8,6 +8,11 @@
 
 .portfolio--grid {
   padding: var(--mobile--padding);
+  width: calc(100% - 2rem);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  grid-gap: 1rem;
+  grid-auto-flow: row dense;
 }
 
 .portfolio--grid--item {
@@ -89,7 +94,6 @@
     grid-column: 1/-1;
     display: grid;
     grid-gap: 1rem;
-    grid-auto-rows: 350px;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-flow: row;
     .portfolio--grid--item {
