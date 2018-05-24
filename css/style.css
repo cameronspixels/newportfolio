@@ -98,23 +98,23 @@ main {
   bottom: 30px;
   right: 45%;
   transform: translateX(-45%);
-  animation: hovering 10s infinite; }
+  animation: hovering 8s infinite; }
 
 @keyframes hovering {
   0% {
-    transform: translateY(0px); }
+    transform: translateY(0px) scale3d(1, 1, 1); }
   20% {
-    transform: translateY(0px); }
+    transform: translateY(0px) scale3d(1, 1, 1); }
   22% {
-    transform: translateY(10px); }
+    transform: translateY(10px) scale3d(1.15, 1.2, 1); }
   24% {
-    transform: translateY(0px); }
+    transform: translateY(0px) scale3d(1.2, 1.15, 1); }
   26% {
-    transform: translateY(10px); }
+    transform: translateY(10px) scale3d(1.15, 1.2, 1); }
   28% {
-    transform: translateY(0px); }
+    transform: translateY(0px) scale3d(1, 1, 1); }
   100% {
-    transform: translateY(0px); } }
+    transform: translateY(0px) scale3d(1, 1, 1); } }
 @media screen and (min-width: 800px) {
   .header--primary, .header--sub--1, .header--sub--2, .header--sub--3 {
     height: 100vh; }
@@ -522,8 +522,10 @@ main {
   text-align: center; }
 
 .portfolio--grid {
+  margin: 0 auto;
   padding: var(--mobile--padding);
   width: calc(100% - 2rem);
+  max-width: 1440px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
   grid-gap: 1rem;
@@ -534,9 +536,13 @@ main {
   position: relative;
   height: auto;
   width: auto;
-  overflow: hidden; }
+  overflow: hidden;
+  display: block; }
   .portfolio--grid--item:last-child {
     margin-bottom: 5rem; }
+  .portfolio--grid--item:hover .item--img {
+    transform: scale(1.25);
+    transition: transform 660ms ease-in-out; }
 
 .grid--item--wrapper {
   padding: 2rem 1rem 3rem 1rem;
@@ -554,12 +560,16 @@ main {
   font-size: .9rem; }
 
 .item--link {
-  color: var(--grey);
-  font-size: .9rem; }
+  color: var(--color--grey);
+  font-size: .9rem;
+  display: block; }
 
 .item--img {
   height: 100%;
-  object-fit: cover; }
+  width: 100%;
+  object-fit: contain;
+  transform: scale(1.15);
+  transition: transform 660ms ease-in-out; }
 
 .red {
   background-color: red; }

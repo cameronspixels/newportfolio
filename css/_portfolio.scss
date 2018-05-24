@@ -7,8 +7,9 @@
 
 
 .portfolio--grid {
+  margin: 0 auto;
   padding: var(--mobile--padding);
-  width: calc(100% - 2rem);
+  width: calc(100% - 2rem); max-width: 1440px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
   grid-gap: 1rem;
@@ -21,8 +22,15 @@
   height: auto;
   width: auto;
   overflow: hidden;
+  display: block;
   &:last-child {
     margin-bottom: 5rem;
+  }
+  &:hover {
+    .item--img {
+      transform: scale(1.25);
+      transition: transform 660ms ease-in-out;
+    }
   }
 }
 
@@ -46,13 +54,17 @@
 }
 
 .item--link {
-  color: var(--grey);
+  color: var(--color--grey);
   font-size: .9rem;
+  display: block;
 }
 
 .item--img {
   height: 100%;
-  object-fit: cover;
+  width: 100%;
+  object-fit: contain;
+  transform: scale(1.15);
+  transition: transform 660ms ease-in-out;
 }
 
 .red {

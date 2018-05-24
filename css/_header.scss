@@ -66,29 +66,29 @@
 	bottom: 30px;
 	right: 45%;
 	transform: translateX(-45%);
-	animation: hovering 10s infinite;
+	animation: hovering 8s infinite;
 }
 @keyframes hovering {
 	0% {
-		transform: translateY(0px);
+		transform: translateY(0px) scale3d(1,1,1);
 	}
 	20% {
-		transform: translateY(0px);
+		transform: translateY(0px) scale3d(1,1,1);
 	}
 	22% {
-		transform: translateY(10px);
+		transform: translateY(10px) scale3d(1.15,1.2,1);
 	}
 	24% {
-		transform: translateY(0px);
+		transform: translateY(0px) scale3d(1.2,1.15,1);
 	}
 	26% {
-		transform: translateY(10px);
+		transform: translateY(10px) scale3d(1.15,1.2,1);
 	}
 	28% {
-		transform: translateY(0px);
+		transform: translateY(0px) scale3d(1,1,1);
 	}
 	100% {
-		transform: translateY(0px);
+		transform: translateY(0px) scale3d(1,1,1);
 	}
 }
 @media screen and (min-width: 800px) {
