@@ -59,6 +59,36 @@
   }
 }
 
+.full--width {
+  grid-column: 1/-1;
+}
+
+.grid--intro {
+  line-height: 1.5;
+  margin: 0 auto 2rem auto;
+  max-width: 800px;
+}
+
+.grid--subheading {
+  margin: 0 0 1rem 0;
+  font-size: 1.8rem;
+}
+
+.grid--left {
+}
+
+.grid--right {
+}
+
+.grid--paragraph {
+  margin: 0 0 2rem 0;
+  max-width: 600px;
+  line-height: 1.5;
+  &:last-child {
+    margin-bottom: 5rem;
+  }
+}
+
 @media screen and (min-width: 800px) {
 
   .section--text--wrapper {
@@ -108,6 +138,36 @@
   .portfolio--icon {
     margin: 0.5rem 1rem 0.5rem 0;
     height: 80px;
+  }
+
+  .grid--paragraph {
+    margin: 0 auto;
+    &:last-child {
+      margin-bottom: 3rem;
+    }
+  }
+
+  .grid--intro {
+    margin: 0 auto 4rem auto;
+    grid-column: 1/3;
+  }
+  
+  .grid--subheading {
+    width: 600px;
+    margin: 0 auto;
+    align-self: flex-end;
+  }
+  
+  .grid--left {
+    grid-column: 1/2;
+  }
+  
+  .grid--right {
+    grid-column: 2/3;
+  }
+
+  .grid--4 {
+    grid-row-start: 4;
   }
 
 }
