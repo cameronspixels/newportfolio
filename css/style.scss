@@ -23,33 +23,41 @@ If you'd like, you can find the uncompiled files .scss in the same directory. */
 	--color--twitter--blue: #00aced;
 	--mobile--padding: 0 20px;
 }
+
 @mixin fonts {
 	font-family: 'Avenir Next', 'Raleway', 'Helvetica Neue', 'Arial', 'Ubuntu', sans-serif;
 }
+
 body {
 	margin: 0; padding: 0;
 	background: var(--color--white); color: var(--color--grey);
 	@include fonts; font-size: 100%; font-weight: 500;
 }
+
 main {
 	overflow: hidden;
 }
+
 @import 'header';
 @import 'nav';
+
 .header--one {
 	margin: 0; padding: 0;
 	font-weight: 700; font-size: 4.236rem;
 	line-height: 1.115;
 	letter-spacing: -1px;
 }
+
 .header--two {
 	margin: 0; padding: 5rem 0 2rem 0;
 	font-weight: 700; font-size: 2.618rem;
 	letter-spacing: -1px;
 }
+
 .left--align {
 	text-align: left;
 }
+
 .link--regular {
 	color: var(--color--grey);
 	text-decoration: none;
@@ -69,6 +77,7 @@ main {
 		}
 	}
 }
+
 .link--alternative {
 	color: var(--color--white);
 	text-decoration: none;
@@ -88,9 +97,11 @@ main {
 		}
 	}
 }
+
 .section--header, .section--text {
 	padding: var(--mobile--padding);
 }
+
 .section--text {
 	line-height: 1.5;
 	padding-bottom: 2rem;
@@ -107,76 +118,39 @@ main {
 		padding-bottom: 1rem;
 	}
 }
+
 .container--primary {
 	position: relative;
 }
-@keyframes social--animation {
-	0% {
-		transform: scale(1);
-	}
-	6% {
-		transform: scale(1.2);
-	}
-	12% {
-		transform: scale(1);
-	}
-	18% {
-		transform: scale(1.2);
-	}
-	24% {
-		transform: scale(1);
-	}
-}
-.social--anchor--page {
-	height: 100%;
-	display: block;
-	text-decoration: none; 
-	background-color: var(--color--white);
-	overflow: hidden;
-	&:hover {
-		background-color: var(--color--off--white);
-	}
-}
-.social--anchor--text {
-	margin: 0; padding: 2rem 0;
-	font-size: 1.5rem; font-weight: 800;
-	color: var(--color--twitter--blue);
-	text-align: center;
-}
-.social--anchor--page--intro {
-	margin: 0; padding: 3rem 0 0 0;
-	font-size: 1.2rem; font-weight: 700;
-	color: var(--color--grey);
-	text-align: center;
-}
-.social--anchor--page--text {
-	margin: 0; padding: 2rem 0 3rem 0;
-	font-size: 1.8rem; font-weight: 700;
-	color: var(--color--red);
-	text-align: center;
-}
+
 .social--logo {
 	margin: 0 auto; padding-bottom: 2rem;
 	display: block;
 	height: 60px;
 	animation: social--animation 6000ms infinite;
 }
+
 .section--dark {
 	background-color: var(--color--grey);
 	color: var(--color--white);
 }
+
 .section--list {
 	padding: 0 0 0 2rem;
 }
+
 @import 'portfolio';
 @import 'blog';
 @import 'form';
 @import 'footer';
+
 @media screen and (min-width: 800px) {
+
 	.container--primary {
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
 	}
+
 	.section--header {
 		padding: 5rem 0 4rem 0;
 		display: block;
@@ -189,14 +163,17 @@ main {
 			max-width: 80%;
 		}
 	}
+
 	.section--text {
 		padding: 5rem 0 4rem 0;
 		grid-column: 7/13;
 		line-height: 1.75;
 	}
+
 	.section--top--text {
 		padding-top: 2rem;
 	}
+
 	.section--paragraph {
 		margin: 0 auto;
 		padding: 0 2rem;
@@ -204,39 +181,51 @@ main {
 		max-width: 600px;
 		font-size: 1.1rem;
 	}
+
 	.social--anchor--page {
 		grid-column: 1/-1;
 		min-height: 200px;
 	}
+
 	.social--anchor--page--text {
 		font-size: 2rem;
 	}
+
 	.header--one {
 		margin: 0;
 		text-align: left;
 		font-size: 6.854rem; 
 	}
+
 	.header--two {
 		font-size: 4.236rem;
 		padding: 0;
 	}
+
 	.header--subpage {
 		letter-spacing: -1px;
 	}
+
 	.section--holding {
 		padding: 100px 0;
 	}
+
 	.section--list {
 		margin-left: 2rem;
 	}
+
 }
+
 @media screen and (min-width: 1024px) {
+
 	.section--header {
 		.header--two {
 			padding: 0 0 0 4rem;
 		}
 	}
+
 	.section--paragraph {
 		margin: 0 auto;
 	}
+	
 }

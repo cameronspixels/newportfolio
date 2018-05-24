@@ -3,26 +3,31 @@
 	position: relative;
 	height: 90vh;
 }
+
 .header--primary {
 	@include header-stuff;
 	background: var(--color--darkred);
 	color: var(--color--white);
 }
+
 .header--sub--1 {
 	@include header-stuff;
 	background: var(--color--darkblue);
 	color: var(--color--white);
 }
+
 .header--sub--2 {
 	@include header-stuff;
 	background: var(--color--bg--yellow);
 	color: var(--color--grey);
 }
+
 .header--sub--3 {
 	@include header-stuff;
 	background: var(--color--green);
 	color: var(--color--white);
 }
+
 .header--primary--content {
 	position: absolute;
 	top: 50%;
@@ -30,9 +35,11 @@
 	width: 90%; 
 	max-width: 1300px;
 }
+
 .header--tagline {
 	font-weight: 700; font-size: 1.618rem;
 }
+
 .link--skip {
 	height: 1px;
 	width: 1px;
@@ -40,26 +47,35 @@
 	left: 0;
 	top: -500px;
 }
+
 @keyframes flasher {
+	
 	0% {
 		opacity: 1;
 	}
+
 	49% {
 		opacity: 1;
 	}
+
 	50% {
 		opacity: 0;
 	}
+	
 	99% {
 		opacity: 0;
 	}
+
 	100% {
 		opacity: 1;
 	}
+
 }
+
 .flashing {
 	opacity: 1; animation: flasher 990ms infinite;
 }
+
 .header--indicator {
 	width: 40px;
 	position: absolute;
@@ -68,42 +84,55 @@
 	transform: translateX(-45%);
 	animation: hovering 8s infinite;
 }
+
 @keyframes hovering {
+
 	0% {
 		transform: translateY(0px) scale3d(1,1,1);
 	}
+
 	20% {
 		transform: translateY(0px) scale3d(1,1,1);
 	}
+
 	22% {
 		transform: translateY(10px) scale3d(1.15,1.2,1);
 	}
+
 	24% {
 		transform: translateY(0px) scale3d(1.2,1.15,1);
 	}
+
 	26% {
 		transform: translateY(10px) scale3d(1.15,1.2,1);
 	}
+
 	28% {
 		transform: translateY(0px) scale3d(1,1,1);
 	}
+
 	100% {
 		transform: translateY(0px) scale3d(1,1,1);
 	}
+
 }
 @media screen and (min-width: 800px) {
+
 	.header--primary, .header--sub--1, .header--sub--2, .header--sub--3 {
 		height: 100vh;
 	}
+
 	.header--tagline {
 		font-size: 2.618rem;
 		text-align: right;
 	}
+
 	.header--primary--content {
 		width: calc(95% - 40px);
 		left: 50%;
 		transform: translate(-50%, -50%);
 	}
+
 	.header--indicator {
 		width: 40px;
 		position: absolute;
@@ -112,4 +141,5 @@
 		transform: translateX(-50%);
 		animation: hovering 10s infinite;
 	}
+	
 }
