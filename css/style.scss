@@ -135,6 +135,11 @@ main {
 	color: var(--color--white);
 }
 
+.section--darkgradient {
+	background: linear-gradient(165deg, #1e1e20 60%, #2b2b30 40%, #2b2b30 40%);
+	color: var(--color--white);
+}
+
 .section--list {
 	padding: 0 0 0 2rem;
 }
