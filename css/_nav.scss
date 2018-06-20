@@ -325,20 +325,32 @@
 	}
 
 	.nav--link {
-		width: 120px;
-		min-width: 120px;
-		padding: 1.2rem 0;
+		padding: 1.2rem 2rem;
+		width: auto;
 		font-size: 1.2rem; line-height: 1rem; font-weight: 500;
 		text-indent: 0;
 		color: var(--color--off--white);
 		position: relative;
+		&::after {
+			content: '';
+			height: .1rem; background: white;
+			position: absolute;
+			left: 1.6rem; right: 1.6rem; bottom: .6rem;
+			animation: none; transition: transform 330ms ease;
+			transform: scalex(0); transform-origin: left;
+		}
+		&:hover {
+			&::after {
+				transform: scalex(1);
+			}
+		}
 	}
 
 	.nav--active {
-		text-decoration: underline;
+		text-decoration: none;
 		color: var(--color--white);
-		&:after {
-			content: '';
+		&::after {
+			transform: none;
 		}
 	}
 
