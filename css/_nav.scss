@@ -346,6 +346,12 @@
 		}
 	}
 
+	.nav--alt {
+		&::after {
+			background: var(--color--grey);
+		}
+	}
+
 	.nav--active {
 		text-decoration: none;
 		color: var(--color--white);
@@ -356,8 +362,7 @@
 
 	.nav--blog {
 		.nav--link {
-		color: var(--color--grey);
+			color: var(--color--grey);
 		}
 	}
-	
 }
