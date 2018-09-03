@@ -1,26 +1,26 @@
 /* I write with SASS and apologise if this complies in flames.
 If you'd like, you can find the uncompiled files .scss in the same directory. */
 :root {
-	--color--white: #FFF;
-	--color--off--white: #F5F5F5;
-	--color--very--off--white: #BDBDBD;
-	--color--grey: #303036;
-	--color--off--grey: #1e1e20;
-	--color--black: #0D0D0D;
-	--color--red: #F00D2E;
+	--white: #FFF;
+	--off-white: #F5F5F5;
+	--very-off-white: #BDBDBD;
+	--grey: #303036;
+	--off-grey: #1e1e20;
+	--black: #0D0D0D;
+	--red: #F00D2E;
 	// --color--darkred: #D20D2E;
-	--color--darkred: linear-gradient(to bottom right, #D20D2E, rgb(212, 53, 151));
-	--color--blue: #1495CC;
-	// --color--darkblue: #0980B2;
-	--color--darkblue: linear-gradient(to bottom right, #0980B2, rgb(0, 202, 51));
-	--color--yellow: #FFBF47;
-	// --color--bg--yellow: #FFF419;
-	--color--bg--yellow: linear-gradient(to bottom right, #FFF419, rgb(255, 163, 25));
-	--color--bg--yellow--2: #e6bf13;
-	// --color--green: rgb(89, 43, 141);
-	--color--green: linear-gradient(to bottom right, rgb(89, 43, 141), rgb(199, 0, 189));
-	--color--none: rgba(0,0,0,0);
-	--color--twitter--blue: #00aced;
+	--darkred: linear-gradient(to bottom right, #D20D2E, rgb(212, 53, 151));
+	--blue: #1495CC;
+	// --darkblue: #0980B2;
+	--darkblue: linear-gradient(to bottom right, #0980B2, rgb(0, 202, 51));
+	--yellow: #FFBF47;
+	// --bg--yellow: #FFF419;
+	--bg--yellow: linear-gradient(to bottom right, #FFF419, rgb(255, 163, 25));
+	--bg--yellow--2: #e6bf13;
+	// --green: rgb(89, 43, 141);
+	--green: linear-gradient(to bottom right, rgb(89, 43, 141), rgb(199, 0, 189));
+	--none: rgba(0,0,0,0);
+	--twitter--blue: #00aced;
 	--mobile--padding: 0 20px;
 }
 
@@ -30,111 +30,93 @@ If you'd like, you can find the uncompiled files .scss in the same directory. */
 
 body {
 	margin: 0; padding: 0;
-	background: var(--color--white); color: var(--color--grey);
+	background: var(--white); color: var(--grey);
 	@include fonts; font-size: 100%; font-weight: 500;
 }
 
 main {
-	overflow: hidden;
+	position: relative; overflow: hidden;
 }
 
 @import 'header';
 @import 'nav';
 
-.header--one {
+.heading {
 	margin: 0; padding: 0;
-	font-weight: 700; font-size: 4.236rem;
-	line-height: 1.115;
-	letter-spacing: -1px;
+	font-weight: 700; letter-spacing: -1px;
+	&.h1 {
+		font-size: 4.236rem; line-height: 1.115;
+	}
+	&.h2 {
+		padding: 5rem 0 2rem;
+		font-size: 2.618rem;
+	}
 }
-
-.header--two {
-	margin: 0; padding: 5rem 0 2rem 0;
-	font-weight: 700; font-size: 2.618rem;
-	letter-spacing: -1px;
-}
-
-.left--align {
-	text-align: left;
-}
-
-.link--regular {
-	color: var(--color--grey);
-	text-decoration: none;
+.text-link {
 	position: relative;
+	text-decoration: none;
 	&::after {
 		content: '';
-		border-top: .08rem solid var(--color--grey);
-		position: absolute;
-		left: 0rem;
-		right: 0rem;
-		bottom: .01rem;
+		height: .08rem;
+		position: absolute; left: 0rem; right: 0rem; bottom: .01rem;
 	}
-	&:hover {
-		color: var(--color--black);
+	&.link-dark {
+		color: var(--grey);
 		&::after {
-			color: var(--color--black);
+			background: var(--grey);
+		}
+		&:hover {
+			color: var(--black);
+			&::after {
+				background: var(--black);
+			}
 		}
 	}
-}
-
-.link--alternative {
-	color: var(--color--white);
-	&::after {
-		border-color: var(--color--white);
-	}	
-	&:hover {
-		color: var(--color--very--off--white);
+	&.link-light {
+		color: var(--white);
 		&::after {
-			border-color: var(--color--very--off--white);
-		}
+			background: var(--white);
+		}	
+		&:hover {
+			color: var(--very-off-white);
+			&::after {
+				background: var(--very-off-wwhite);
+			}
+		}	
 	}
 }
-
-.section--header, .section--text {
+.section {
 	padding: var(--mobile--padding);
-}
-
-.section--text {
-	line-height: 1.5;
-	padding-bottom: 2rem;
-	.section--paragraph {
-		margin: 0; padding-bottom: 2rem;
-	}
-	.section--list {
+	&.right {
 		padding-bottom: 2rem;
 	}
-	.section--paragraph:last-child, .section--list:last-child {
-		padding-bottom: 3rem;
+	&.title {
+
 	}
-	.list--paragraph {
-		padding-bottom: 1rem;
+	&.text {
+		line-height: 1.5;
+		p, ul, ol {
+			margin: 0; padding-bottom: 2rem;
+			&:last-child {
+				padding-bottom: 3rem;
+			}
+		}
 	}
-}
-
-.container--primary {
-	position: relative;
-}
-
-.social--logo {
-	margin: 0 auto; padding-bottom: 2rem;
-	display: block;
-	height: 60px;
-	animation: social--animation 6000ms infinite;
-}
-
-.section--dark {
-	background-color: var(--color--grey);
-	color: var(--color--white);
+	&.full {
+		p {
+			margin: 0 auto; padding: 25vh 0;
+			font-size: 1.75rem; font-weight: 600; line-height: 1.5;
+		}
+	}
+	&.dark {
+		background-color: var(--grey);
+		color: var(--white);
+	}
 }
 
 .section--darkgradient {
 	background: linear-gradient(165deg, #1e1e20 60%, #2b2b30 40%, #2b2b30 40%);
-	color: var(--color--white);
-}
-
-.section--list {
-	padding: 0 0 0 2rem;
+	color: var(--white);
 }
 
 @import 'portfolio';
@@ -143,87 +125,79 @@ main {
 @import 'footer';
 
 @media screen and (min-width: 800px) {
-
-	.container--primary {
+	main {
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
 	}
-
-	.section--header {
-		padding: 5rem 0 4rem 0;
-		display: block;
-		text-align: center;
-		grid-column: 1/7;
-		width: 100%;
-		.header--two {
-			margin: 0 auto;
-			padding: 0 2rem 0 4rem;
-			max-width: 80%;
+	.section {
+		padding: 5rem 0 4rem;
+		&.left {
+			grid-column: 1/7;
+			width: 100%;
+		}
+		&.right {
+			grid-column: 7/13;
+		}
+		&.title {
+			display: block;
+			text-align: center;
+			.heading {
+				&.h2 {
+				margin: 0 auto;
+				padding: 0 2rem 0 4rem;
+				max-width: 80%;
+				}
+			}
+		}
+		&.text {
+			line-height: 1.75;
+			p {
+				margin: 0 auto; padding: 0 2rem;
+				max-width: 600px;
+				font-size: 1.1rem; text-align: left;
+				&.list {
+					p {
+						padding: 0 2rem 2rem;
+					}
+				}
+			}
+			ul {
+				margin-left: 2rem;
+				}
+		}
+		&.full {
+			padding: 5rem 0;
+			height: calc(100vh - 10rem);
+			grid-column: 1/13; display: grid; grid-template-rows: 100%; align-items: center;
+			p {
+				padding: 0;
+				max-width: 80%;
+				font-size: 2rem; line-height: 1.75;
+			}
 		}
 	}
-
-	.section--text {
-		padding: 5rem 0 4rem 0;
-		grid-column: 7/13;
-		line-height: 1.75;
+	.heading {
+		&.h1 {
+			text-align: left;
+			font-size: 6.854rem; 
+		}
+		&.h2 {
+			padding: 0;
+			font-size: 4.236rem;
+		}
 	}
-
-	.section--top--text {
-		padding-top: 2rem;
-	}
-
-	.section--paragraph {
-		margin: 0 auto;
-		padding: 0 2rem;
-		text-align: left;
-		max-width: 600px;
-		font-size: 1.1rem;
-	}
-
-	.social--anchor--page {
-		grid-column: 1/-1;
-		min-height: 200px;
-	}
-
-	.social--anchor--page--text {
-		font-size: 2rem;
-	}
-
-	.header--one {
-		margin: 0;
-		text-align: left;
-		font-size: 6.854rem; 
-	}
-
-	.header--two {
-		font-size: 4.236rem;
-		padding: 0;
-	}
-
-	.header--subpage {
-		letter-spacing: -1px;
-	}
-
-	.section--holding {
-		padding: 100px 0;
-	}
-
-	.section--list {
-		margin-left: 2rem;
-	}
-
 }
 
 @media screen and (min-width: 1024px) {
-
-	.section--header {
-		.header--two {
-			padding: 0 0 0 4rem;
+	.heading {
+		&.h2 {
 		}
 	}
-
-	.section--paragraph {
-		margin: 0 auto;
+	.section {
+		&.text {
+			p {
+				margin: 0 auto;
+			}
+		}
 	}
-	
 }

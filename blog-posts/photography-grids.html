@@ -33,8 +33,8 @@
     <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
   </head>
   <body id="top">
-  	<header class="header--sub--2" id="openMenu">
-      <a class="link--skip" href="#content" title="Skip to main content">Skip to main content</a>
+  	<header class="orange-yellow" id="openMenu">
+      <a class="skiplink" href="#content" title="Skip to main content">Skip to main content</a>
   		<nav class="nav--primary nav--color--alt">
         <a href="#openMenu" class="nav--hamburger handle--open" title="Open mobile menu"><span class="nav--hamburger--block nav--hamburger--block-1"></span><span class="nav--hamburger--block nav--hamburger--block-2"></span><span class="nav--hamburger--block nav--hamburger--block-3"></span></a>
         <a href="#" class="nav--hamburger handle--closed" title="Close mobile menu"><span class="nav--hamburger--block nav--hamburger--block-1"></span><span class="nav--hamburger--block nav--hamburger--block-2"></span><span class="nav--hamburger--block nav--hamburger--block-3"></span></a>
@@ -48,31 +48,31 @@
         </div>
   		</nav>
   		<section class="header--primary--content">
-  			<h1 class="header--one header--subpage">CSS Grids</h1>
+  			<h1 class="heading h1 header--subpage">CSS Grids</h1>
   			<p class="header--tagline">Word of the day: fluidity <span class="flashing">|</span></p>
       </section>
-      <svg class="header--indicator" viewBox="0 0 444.819 444.819" aria-describedby="arrow--title">
+      <svg class="arrow" viewBox="0 0 444.819 444.819" aria-describedby="arrow--title">
         <title id="arrow--title">Arrow To Content</title>
         <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/Arrow-To-Content-Black.svg" x="0" y="0" width="100%" height="100%"></image>
       </svg>
   	</header>
   	<main class="container--primary" id="content">
-      <h2 class="header--two--blog">CSS Grids</h2>
+      <h2 class="heading h2--blog">CSS Grids</h2>
       <p class="blog--info--date">09/03/2017</p>
       <p class="blog--info--name">by Cameron Barnes</p>
-      <div class="section--text--blog">
-        <p class="section--top--text section--paragraph">The past couple of years have seen a great push in the implementation of CSS grids, with the technology having been around for a while now. Compatibility, understanding, and the desire for such a layout system on the web have all grown.</p>
-        <p class="section--paragraph">The power comes in the ability to so easily manipulate two dimensions. Where <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox" title="Flexbox documentation." class="link--regular">flexbox</a> largely operates using rows and can represent a grid, grids works with both dimensions in a manner which removes the need to patch together other CSS properties. With progression like responsive design on the web currently, these simpler methods are welcome.</p>
+      <div class="section right-section text-section--blog">
+        <p class=" section--paragraph">The past couple of years have seen a great push in the implementation of CSS grids, with the technology having been around for a while now. Compatibility, understanding, and the desire for such a layout system on the web have all grown.</p>
+        <p class="section--paragraph">The power comes in the ability to so easily manipulate two dimensions. Where <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox" title="Flexbox documentation." class="text-link link-dark">flexbox</a> largely operates using rows and can represent a grid, grids works with both dimensions in a manner which removes the need to patch together other CSS properties. With progression like responsive design on the web currently, these simpler methods are welcome.</p>
         <h3 class="blog--post--header">The Project</h3>
         <p class="section--paragraph">With this project, I wanted to make grids fluid. It’s great when design elements fit together perfectly with no gaps or flaws, and that’s what I was going for. This is all the more fun when responsive, because you should be able to see visual that everything changes as the viewport width scales.</p>
-        <p class="section--paragraph">I think of it like bricks in a house. If cements plays the role of the grid-gap, then it’s just all one grid. I note that brick-built houses aren’t (traditionally or easily) responsive… If you’ve used JavaScript libraries for a while, you’ll probably liken this to <a href="https://masonry.desandro.com/" title="Masonry JS website." class="link--regular">Masonry.js</a> – one designed for grid layout.</p>  
+        <p class="section--paragraph">I think of it like bricks in a house. If cements plays the role of the grid-gap, then it’s just all one grid. I note that brick-built houses aren’t (traditionally or easily) responsive… If you’ve used JavaScript libraries for a while, you’ll probably liken this to <a href="https://masonry.desandro.com/" title="Masonry JS website." class="text-link link-dark">Masonry.js</a> – one designed for grid layout.</p>  
         <p class="section--paragraph">To a large degree, this project is doing what Masonry aimed to enable. While I don’t use Masonry here (and haven’t previously), I wanted my demonstrator of grids to be photography portfolio similar to what Masonry would produce, but in CSS.</p>
         <h3 class="blog--post--header">Grids in Design</h3>
         <p class="section--paragraph">Of course, the use of grids isn’t new. While the web hasn’t always been the greatest enabler, grids as a scheme of design have been around for decades upon decades.</p>
         <p class="section--paragraph">Discussing the benefits of grids, Josef Muller-Brockmann notes the ability to control even space and organisation, allowing favourable placement of elements to better achieve objectives. That was published in 1981, and the same principles still apply. Grids were designed to cover all forms of visual media, and continue to today.</p>
         <h3 class="blog--post--header">Getting Technical</h3>
-        <p class="section--paragraph">When first learning about grids on the web, my go-to was <a href="https://abookapart.com/products/get-ready-for-css-grid-layout" title="Purchase Get Ready for CSS Grid Layout" class="link--regular">‘Get Ready for CSS Grid Layout’</a> by Rachel Andrew. As with most <a href="https://abookapart.com/" title="A Book Apart books." class="link--regular">A Book Apart books</a>, it’s affordable, concise, and fantastic when it comes to the topic at hand. This book in particular provides an overview of the simplest properties that grid requires to work, and is highly recommended if you’re yet to get off the ground.</p>          
-        <p class="section--paragraph">Knowing a lot of that, to figure out the exact attributes that I needed for the fluidity that I was seeking, I spent a lot of time on Codepen. If you <a href="https://codepen.io/search/pens?q=css%20grid&order=popularity&depth=everything&show_forks=false" title="CSS Grid search on Codepen." class="link--regular">search for CSS Grid on there</a>, I’ve probably looked at most of the first few pages to see how they used grids and the CSS properties defined. Particularly helpful from these was <a href="https://codepen.io/ramenhog/pen/MpORPa?q=css+grid&limit=all&type=type-pens" title="Stephanie's CSS responsive image gallery." class="link--regular">Stephanie’s CSS responsive image gallery</a>, illustrating something similar to what I was looking to make.</p>          
+        <p class="section--paragraph">When first learning about grids on the web, my go-to was <a href="https://abookapart.com/products/get-ready-for-css-grid-layout" title="Purchase Get Ready for CSS Grid Layout" class="text-link link-dark">‘Get Ready for CSS Grid Layout’</a> by Rachel Andrew. As with most <a href="https://abookapart.com/" title="A Book Apart books." class="text-link link-dark">A Book Apart books</a>, it’s affordable, concise, and fantastic when it comes to the topic at hand. This book in particular provides an overview of the simplest properties that grid requires to work, and is highly recommended if you’re yet to get off the ground.</p>          
+        <p class="section--paragraph">Knowing a lot of that, to figure out the exact attributes that I needed for the fluidity that I was seeking, I spent a lot of time on Codepen. If you <a href="https://codepen.io/search/pens?q=css%20grid&order=popularity&depth=everything&show_forks=false" title="CSS Grid search on Codepen." class="text-link link-dark">search for CSS Grid on there</a>, I’ve probably looked at most of the first few pages to see how they used grids and the CSS properties defined. Particularly helpful from these was <a href="https://codepen.io/ramenhog/pen/MpORPa?q=css+grid&limit=all&type=type-pens" title="Stephanie's CSS responsive image gallery." class="text-link link-dark">Stephanie’s CSS responsive image gallery</a>, illustrating something similar to what I was looking to make.</p>          
         <figure class="blog--figure">
           <img class="blog--figure--image" src="../img/css-grids.png" alt="Stephanie's CSS responsive image gallery.">
           <figcaption class="blog--figure--caption">
@@ -80,7 +80,7 @@
           </figcaption>
         </figure>
         <h3 class="blog--post--header">My Demonstrator</h3>
-        <p class="section--paragraph">As discussed, my aim was to use CSS grids to create a responsive photography portfolio. This was originally completed and can be found on Codepen (as below), but is also accessible at <a href="../photography-grids/" title="My CSS grids demonstrator" class="link--regular">cameronspixels.co.uk/photography-grids/</a>.</p>
+        <p class="section--paragraph">As discussed, my aim was to use CSS grids to create a responsive photography portfolio. This was originally completed and can be found on Codepen (as below), but is also accessible at <a href="../photography-grids/" title="My CSS grids demonstrator" class="text-link link-dark">cameronspixels.co.uk/photography-grids/</a>.</p>
         <figure class="blog--figure">
           <p data-height="600" data-theme-id="0" data-slug-hash="rJqBJW" data-default-tab="result" data-user="cameronspixels" data-embed-version="2" data-pen-title="Responsive Photo Grids" class="codepen">See the Pen <a href="https://codepen.io/cameronspixels/pen/rJqBJW/">Responsive Photo Grids</a> by cameron barnes. (<a href="https://codepen.io/cameronspixels">@cameronspixels</a>) on <a href="https://codepen.io">CodePen</a>.</p>
           <figcaption class="blog--figure--caption">
@@ -88,7 +88,7 @@
           </figcaption>
         </figure>
         <p class="section--paragraph">There were two main CSS properties that I’d highlight as enabling the responsive, flowing grid layout.</p> 
-        <p class="section--paragraph"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-flow#Specifications" title="Grid Auto Flow documentation." class="link--regular">Grid-auto-flow</a> determines the way in which children within the grid position themselves. Passing the keyword ‘row’ tells the grid to position children horizontally as they are defined, before moving onto another row.</p>
+        <p class="section--paragraph"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-flow#Specifications" title="Grid Auto Flow documentation." class="text-link link-dark">Grid-auto-flow</a> determines the way in which children within the grid position themselves. Passing the keyword ‘row’ tells the grid to position children horizontally as they are defined, before moving onto another row.</p>
         <figure class="blog--figure">
           <code class="blog--code">grid-auto-flow: row dense;</code>
           <figcaption class="blog--figure--caption">
@@ -96,12 +96,12 @@
           </figcaption>
         </figure>
         <p class="section--paragraph">‘Dense’ being passed instructs items to fill gaps as they appear in rows. Where larger items have to be pushed forward to fit into the grid, smaller items later in the HTML take the space that they leave.</p>
-        <p class="section--paragraph">Next came the use of ‘auto-fit' in the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns" title="Grid Template Rows documentation." class="link--regular">grid-template-colums</a> property – that used to define the columns in the grid. The first value passed in the ‘repeat()’ argument is often a number, one which defines show many columns are to be created. The use of ‘auto-fit’ tells the grid to use however many can fit into the viewport.</p>       
+        <p class="section--paragraph">Next came the use of ‘auto-fit' in the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns" title="Grid Template Rows documentation." class="text-link link-dark">grid-template-colums</a> property – that used to define the columns in the grid. The first value passed in the ‘repeat()’ argument is often a number, one which defines show many columns are to be created. The use of ‘auto-fit’ tells the grid to use however many can fit into the viewport.</p>       
         <code class="blog--code">grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));</code>
         <p class="section--paragraph">The ‘minmax()’ defines minimum and maximum size of the columns. Setting the minimum at 100% tell creates columns that are at least the size of the content inside, and a 1 fraction maximum ensures that all columns are the same size.</p>    
         <p class="section--paragraph">Combine the auto-fit and minmax arguments, and you get a grid of however many columns can fit into the viewport, where they (at least) fit the content within, and are also all of equal fractions.</p>                
         <h3 class="blog--post--header">Loading</h3>       
-        <p class="section--paragraph">Given that I was just importing images from <a href="unsplash.com" title="Unsplash website." class="link--regular"></a>Unsplash.com which (with quality in best interests) are generally around 2MB in size, I decided to add a loading animation to the gallery. Vanilla JavaScript defines that the animation shows and the grid hidden while the content is downloading – vice-versa when the downloading is complete.</p>       
+        <p class="section--paragraph">Given that I was just importing images from <a href="unsplash.com" title="Unsplash website." class="text-link link-dark"></a>Unsplash.com which (with quality in best interests) are generally around 2MB in size, I decided to add a loading animation to the gallery. Vanilla JavaScript defines that the animation shows and the grid hidden while the content is downloading – vice-versa when the downloading is complete.</p>       
         <figure class="blog--figure">
           <code class="blog--code">
             var grid = document.getElementById("the--grid");
@@ -116,7 +116,7 @@
           </figcaption>
         </figure>
         <h3 class="blog--post--header">The Product</h3>       
-        <p class="section--paragraph">It was exciting to see the grid layout take form. Having <a href="https://codepen.io/cameronspixels/pen/rJqBJW" title="My CSS grids on Codepen" class="link--regular">developed it throughout in CodePen</a>, I could see changes work towards my end goal. On the whole, layout completes what I wanted it to do in terms of fluidity and responsiveness. Coming from just basic use of Grids and having never used libraries like Masonry, it was interesting to learn that just two properties altered the behaviour of the grid items and created the fluidity that I was looking for.</p>
+        <p class="section--paragraph">It was exciting to see the grid layout take form. Having <a href="https://codepen.io/cameronspixels/pen/rJqBJW" title="My CSS grids on Codepen" class="text-link link-dark">developed it throughout in CodePen</a>, I could see changes work towards my end goal. On the whole, layout completes what I wanted it to do in terms of fluidity and responsiveness. Coming from just basic use of Grids and having never used libraries like Masonry, it was interesting to learn that just two properties altered the behaviour of the grid items and created the fluidity that I was looking for.</p>
         <p class="section--paragraph">To me, this highlights the power of grids; a seemingly complex layout was in-fact created in such a small amount of code. To the length that some may have this perceived complexity as an issue, there’s a greater and greater argument for learning grid in what’s still early in it’s production life.</p>          
         <figure class="blog--figure">
           <img class="blog--figure--image" src="../img/grid-compatibility.png" alt="CSS Grid compatibility on Can I Use.">
@@ -124,18 +124,18 @@
             <p class="blog--figure--text">CSS Grid compatibility on Can I Use.</p>
           </figcaption>
         </figure>
-        <p class="section--paragraph">And there lies the only downside. After learning about grids, I wanted them everywhere. Of course, I had to stop at the very first project. A main requirement was that it had Internet Explorer compatibility as far back as IE 9 and 10, and this is one of few things pulling grids down. Only IE 11 has even partial grid support through the use of the -ms- prefix, as we can see below on the <a href="https://caniuse.com/#search=css%20grid" title="Compatibility of CSS Grids on Can I Use." class="link--regular">CanIUse</a> (a great resource for finding out which browsers support web features). While around 87% compatibility is fantastic, alienating 13% can be a poor choice - <a href="https://rachelandrew.co.uk/archives/2017/07/04/is-it-really-safe-to-start-using-css-grid-layout/" title="Rachel Andrew grid compatibility." class="link--regular">so consider audience heavily</a>. However with interest still only growing, grids remain a fantastic option and potentially the best looking towards CSS layout in the future.</p>
-        <p class="section--paragraph"><a href="https://github.com/cameronspixels/photo--grids" title="Link to github files." class="link--regular">Link to the files on GitHub.</a></p>
+        <p class="section--paragraph">And there lies the only downside. After learning about grids, I wanted them everywhere. Of course, I had to stop at the very first project. A main requirement was that it had Internet Explorer compatibility as far back as IE 9 and 10, and this is one of few things pulling grids down. Only IE 11 has even partial grid support through the use of the -ms- prefix, as we can see below on the <a href="https://caniuse.com/#search=css%20grid" title="Compatibility of CSS Grids on Can I Use." class="text-link link-dark">CanIUse</a> (a great resource for finding out which browsers support web features). While around 87% compatibility is fantastic, alienating 13% can be a poor choice - <a href="https://rachelandrew.co.uk/archives/2017/07/04/is-it-really-safe-to-start-using-css-grid-layout/" title="Rachel Andrew grid compatibility." class="text-link link-dark">so consider audience heavily</a>. However with interest still only growing, grids remain a fantastic option and potentially the best looking towards CSS layout in the future.</p>
+        <p class="section--paragraph"><a href="https://github.com/cameronspixels/photo--grids" title="Link to github files." class="text-link link-dark">Link to the files on GitHub.</a></p>
         <h3 class="blog--post--header">Resources &amp; References</h3>       
         <p class="section--paragraph">Andrew, R. (2016) Get Ready for CSS Grid Layout. A Book Apart: New York.
-        <br>Andrew, R. (2017) Is it really safe to start using CSS grid layout? RachelAndrew.co.uk. [Online] [Accessed 29th January 2018] <a href="https://rachelandrew.co.uk/archives/2017/07/04/is-it-really-safe-to-start-using-css-grid-layout/" title="Rachel Andrew CSS grid compatibility." class="link--regular">https://rachelandrew.co.uk/archives/2017/07/04/is-it-really-safe-to-start-using-css-grid-layout/</a>
+        <br>Andrew, R. (2017) Is it really safe to start using CSS grid layout? RachelAndrew.co.uk. [Online] [Accessed 29th January 2018] <a href="https://rachelandrew.co.uk/archives/2017/07/04/is-it-really-safe-to-start-using-css-grid-layout/" title="Rachel Andrew CSS grid compatibility." class="text-link link-dark">https://rachelandrew.co.uk/archives/2017/07/04/is-it-really-safe-to-start-using-css-grid-layout/</a>
         <br>Muller-Brockmann, J. (1981) Grid Systems in graphic design. Hastings House Publishers, USA.
-        <br>Stephanie (2018) CSS Grids Responsive Image Layout. Codepen.io. [Online] [Accessed 16th February 2018] <a href="https://codepen.io/ramenhog/pen/MpORPa?q=css+grid&limit=all&type=type-pens" title="Stephanie's CSS grid layout on codepen." class="link--regular">https://codepen.io/ramenhog/pen/MpORPa?q=css+grid&limit=all&type=type-pens</a></p>                   
-        <a class="link--regular link--to--top" href="#top" title="Back to top of page">Back to top of page</a>
+        <br>Stephanie (2018) CSS Grids Responsive Image Layout. Codepen.io. [Online] [Accessed 16th February 2018] <a href="https://codepen.io/ramenhog/pen/MpORPa?q=css+grid&limit=all&type=type-pens" title="Stephanie's CSS grid layout on codepen." class="text-link link-dark">https://codepen.io/ramenhog/pen/MpORPa?q=css+grid&limit=all&type=type-pens</a></p>                   
+        <a class="text-link link-dark link--to--top" href="#top" title="Back to top of page">Back to top of page</a>
       </div>
   	</main>
-  	<footer class="footer--primary">
-      <div class="footer--primary--container">
+  	<footer class="">
+      <div class="container">
         <svg class="footer--social" viewBox="0 0 612 612" aria-describedby="Twitter-Icon-Footer">
           <a href="https://twitter.com/cameronspixels">
             <title id="Twitter-Icon-Footer">Cameron's Twitter Page</title>
@@ -172,7 +172,7 @@
           <li class="footer--nav--element"><a href="../blog.html" class="footer--nav--link" title="Blog page">Blog</a></li>
           <li class="footer--nav--element"><a href="../contact.html" class="footer--nav--link" title="Contact page">Contact</a></li>
         </ul>
-        <p class="footer--text">&copy; <a class="link--alternative" href="http://www.cameronspixels.co.uk/" title="Cameron Barnes' Website">Cameron</a> 2018.</p>
+        <p class="footer--text">&copy; <a class="text-link link-light" href="http://www.cameronspixels.co.uk/" title="Cameron Barnes' Website">Cameron</a> 2018.</p>
       </div>
     </footer>
   </body>

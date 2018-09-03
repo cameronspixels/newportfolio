@@ -1,4 +1,4 @@
-.section--text--wrapper {
+.section right-section text-section--wrapper {
   margin-bottom: 2rem;
   text-align: center;
 }
@@ -114,7 +114,7 @@
 
 @media screen and (min-width: 800px) {
 
-  .section--text--wrapper {
+  .section right-section text-section--wrapper {
     margin: 2rem 0 0 0;
     padding: 0 2rem;
     text-align: center;
@@ -235,7 +235,7 @@
 
 @media screen and (min-width: 1350px) {
 
-  .section--text--wrapper {
+  .section right-section text-section--wrapper {
     max-width: 700px;
   }
 
