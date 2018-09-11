@@ -25,7 +25,7 @@ body {
   padding: 0;
   background: var(--white);
   color: var(--grey);
-  font-family: 'Avenir Next', 'Raleway', 'Helvetica Neue', 'Arial', 'Ubuntu', sans-serif;
+  font-family: 'Avenir Next', 'Raleway', 'Ubuntu', 'Helvetica Neue', 'Arial', sans-serif;
   font-size: 100%;
   font-weight: 500;
 }
@@ -1312,7 +1312,7 @@ header .arrow {
   border-radius: 2px;
   font-size: 16px;
   font-weight: 500;
-  font-family: 'Avenir Next', 'Raleway', 'Helvetica Neue', 'Arial', 'Ubuntu', sans-serif;
+  font-family: 'Avenir Next', 'Raleway', 'Ubuntu', 'Helvetica Neue', 'Arial', sans-serif;
   resize: none;
 }
 
@@ -1327,7 +1327,7 @@ header .arrow {
   background-color: var(--color--white);
   color: var(--color--grey);
   font-size: 1rem;
-  font-family: 'Avenir Next', 'Raleway', 'Helvetica Neue', 'Arial', 'Ubuntu', sans-serif;
+  font-family: 'Avenir Next', 'Raleway', 'Ubuntu', 'Helvetica Neue', 'Arial', sans-serif;
   font-weight: 600;
   text-align: center;
   border: none;
