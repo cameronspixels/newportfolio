@@ -1,8 +1,115 @@
-// Standard
-@import 'fonts/open_sans/open_sans.scss'; // Good standard, used for heading and body text fallback
-@import 'fonts/pt_sans/pt_sans.scss'; // Preferred body text
+// --Open Sans--
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: light;
+  font-display: swap;
+  src: url(fonts/open_sans/OpenSans-Light.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: light; font-style: italic;
+  font-display: swap;
+  src: url(fonts/open_sans/OpenSans-LightItalic.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: normal;
+  font-display: swap;
+  src: url(fonts/open_sans/OpenSans-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: normal; font-style: italic;
+  font-display: swap;
+  src: url(fonts/open_sans/OpenSans-Italic.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: bold;
+  font-display: swap;
+  src: url(fonts/open_sans/OpenSans-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: bold; font-style: italic;
+  font-display: swap;
+  src: url(fonts/open_sans/OpenSans-BoldItalic.ttf) format('truetype');
+}
 
-// Experimental
-@import 'fonts/raleway/raleway.scss'; // Not sure anymore
-@import 'fonts/inter/inter.scss'; // Clean looking sans-serif font
-@import 'fonts/bitter/bitter.scss'; // Legible serif font, good for long reading
+// --PT Sans--
+@font-face {
+  font-family: 'PT Sans';
+  font-weight: normal;
+  font-display: swap;
+  src: url(fonts/pt_sans/PT_Sans-Web-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-weight: normal; font-style: italic;
+  font-display: swap;
+  src: url(fonts/pt_sans/PT_Sans-Web-Italic.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-weight: bold;
+  font-display: swap;
+  src: url(fonts/pt_sans/PT_Sans-Web-Bold.ttf) format('truetype');
+}
+
+// --Inter--
+@font-face {
+  font-family: 'Inter';
+  font-weight: light;
+  font-display: swap;
+  src:  url(fonts/inter/Inter-Light.woff2) format("woff2"),
+        url(fonts/inter/Inter-Light.woff) format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-weight: normal;
+  font-display: swap;
+  src:  url(fonts/inter/Inter-Regular.woff2) format("woff2"),
+        url(fonts/inter/Inter-Regular.woff) format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: normal;
+  font-display: swap;
+  src:  url(fonts/inter/Inter-Italic.woff2) format("woff2"),
+        url(fonts/inter/Inter-Italic.woff) format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: bold;
+  font-display: swap;
+  src:  url(fonts/inter/Inter-SemiBold.woff2) format("woff2"),
+        url(fonts/inter/Inter-SemiBold.woff) format("woff");
+}
+
+// --Bitter--
+@font-face {
+  font-family: 'Bitter';
+  font-weight: normal;
+  font-display: swap;
+  src: url(fonts/bitter/Bitter-Regular.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Bitter';
+  font-weight: normal; font-style: italic;
+  font-display: swap;
+  src: url(fonts/bitter/Bitter-Itlaic.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Bitter';
+  font-weight: bold;
+  font-display: swap;
+  src: url(fonts/bitter/Bitter-Bold.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Bitter';
+  font-weight: bold; font-style: italic;
+  font-display: swap;
+  src: url(fonts/bitter/Bitter-BoldItalic.otf) format('opentype');
+}

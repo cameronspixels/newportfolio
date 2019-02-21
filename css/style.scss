@@ -2,13 +2,13 @@
 @import 'fonts';
 
 @mixin fonts {
-	font-family: 'PT Sans', 'Open Sans', 'Ubuntu', 'Helvetica Neue', 'Arial', sans-serif;
+	font-family: 'iA Writer Quattro', monospace;
 }
 
 body {
 	margin: 0; padding: 0;
 	background: var(--white); color: var(--grey);
-	@include fonts; font-size: 100%; font-weight: 400;
+	@include fonts; font-size: 100%; font-weight: normal;
 }
 
 main {
