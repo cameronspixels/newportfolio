@@ -1,22 +1,11 @@
 header {
 	padding: 0 20px;
 	height: 100vh;
-	position: relative;
-	&.red-blue {
-		background: var(--darkred); color: var(--white);
-	}
-	&.blue-green {
-		background: var(--darkblue); color: var(--white);
-	}
-	&.orange-yellow {
-		background: var(--bg--yellow); color: var(--grey);
-	}
-	&.purple-pink {
-		background: var(--green); color: var(--white);
-	}
+	position: relative; overflow: hidden;
 	.content {
 		width: 90%; max-width: 1300px;
 		position: absolute; top: 50%; transform: translateY(-50%);
+
 		p {
 			font-size: 1.618rem; font-weight: 700;
 			.flashing {
@@ -28,10 +17,16 @@ header {
 		height: 1px; width: 1px;
 		position: absolute;	top: -500px; left: 0;
 	}
-	.arrow {
-		width: 40px;
-		position: absolute;	bottom: 30px; right: 45%; transform: translateX(-45%);
-		animation: hovering 8s infinite;
+	.more-info {
+		position: absolute; bottom: 1rem; left: 5%;
+		display: flex;
+		p {
+			margin: .8rem 0 1rem;
+		}
+		svg {
+			margin: auto 0 auto .6rem;
+			height: 30px;
+		}
 	}
 }
 

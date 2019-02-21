@@ -7,19 +7,19 @@
     <title>Portfolio &amp; CV | Cameron Barnes</title> 
     <meta name="description" content="The portfolio &amp; curriculum vitae of front-end website developer Cameron Barnes.">
     <meta name="keywords" content="cameron barnes, cameronspixels, web, front-end, dev, developer, front-end developer, web development student, front-end development, website development">
-    <link rel="canonical" href="http://www.cameronspixels.co.uk/portfolio-cv/" />
+    <link rel="canonical" href="http://www.cameron.coffee/portfolio-cv/" />
     <link rel="icon" type="image/png" href="favicon-64.png" />
     <meta property="og:title" content="Portfolio &amp; CV | Cameron Barnes" />
-    <meta property="og:url" content="http://www.cameronspixels.co.uk/portfolio-cv.html" />
+    <meta property="og:url" content="http://www.cameron.coffee/portfolio-cv.html" />
     <meta property="og:description" content="The portfolio &amp; curriculum vitae of front-end website developer Cameron Barnes." />
-    <meta property="og:image" content="http://www.15075407.webdevmmu.uk/img/bg-red.jpg" />
+    <meta property="og:image" content="/img/bg-red.jpg" />
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@cameronspixels">
     <meta name="twitter:creator" content="@cameronspixels">
     <meta name="twitter:url" content="https://cameronspixels.co.uk/portfolio-cv.html/">
     <meta name="twitter:title" content="Portfolio &amp; CV | Cameron Barnes">
     <meta name="twitter:description" content="The portfolio &amp; curriculum vitae of front-end website developer Cameron Barnes.">
-    <meta name="twitter:image" content="http://www.15075407.webdevmmu.uk/newnew/img/bg-red.jpg">
+    <meta name="twitter:image" content="/img/bg-red.jpg">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,800" rel="stylesheet">
     <script>
@@ -30,143 +30,97 @@
       ga('create', 'UA-86304133-1', 'auto');
       ga('send', 'pageview');
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="scripty.js"></script>
   </head>
   <body id="top">
   	<header class="blue-green" id="openMenu">
       <a class="skiplink" href="#content" title="Skip to main content">Skip to main content</a>
-  		<nav class="nav--primary">
-        <a href="#openMenu" class="nav--hamburger handle--open" title="Open mobile menu"><span class="nav--hamburger--block nav--hamburger--block-1"></span><span class="nav--hamburger--block nav--hamburger--block-2"></span><span class="nav--hamburger--block nav--hamburger--block-3"></span></a>
-        <a href="#" class="nav--hamburger handle--closed" title="Close mobile menu"><span class="nav--hamburger--block nav--hamburger--block-1"></span><span class="nav--hamburger--block nav--hamburger--block-2"></span><span class="nav--hamburger--block nav--hamburger--block-3"></span></a>
-  			<div class="nav--list">
-          <ul class="nav--center">
-          <li class="nav--holder"><a class="nav--link" href="index.html" title="Homepage">Home</a></li>
-          <li class="nav--holder"><a class="nav--link nav--active" href="portfolio.html" title="Portfolio and cirriculum vitae">Work &amp; CV</a></li>
-          <li class="nav--holder"><a class="nav--link" href="blog.html" title="Blog">Blog</a></li>
-          <li class="nav--holder"><a class="nav--link" href="contact.html" title="Contact me">Contact Me</a></li>
+  		<nav>
+        <a href="#" class="hamburger open" id="hamburgerOpen" title="Open mobile menu"><span class="block-1"></span><span class="block-2"></span><span class="block-3"></span></a>
+  			<div class="list">
+          <ul>
+            <li><a href="index.html" title="Homepage">Home</a></li>
+            <li><a class="active" href="portfolio.html" title="Portfolio and cirriculum vitae">Things</a></li>
+            <li><a href="photography.html" title="Blog">Ramblings</a></li>
+            <li><a href="contact.html" title="Contact me">Contactings</a></li>
+            <li aria-hidden="true" class="bottom-line portfolio"></li>
           </ul>
         </div>
   		</nav>
-  		<section class="header--primary--content">
-        <h1 class="heading h1 header--subpage">My Work & CV</h1>
-  			<p class="header--tagline">Special enough to get new colours <span class="flashing">|</span></p>
+  		<section class="content">
+        <h1 class="heading h1">Things I've Made</h1>
+  			<p>Special enough to get new colours <span class="flashing">|</span></p>
       </section>
-      <svg class="arrow" viewBox="0 0 444.819 444.819" aria-describedby="arrow--title">
-        <title id="arrow--title">Arrow To Content</title>
+      <svg class="arrow" viewBox="0 0 444.819 444.819" aria-describedby="arrow">
+        <title id="arrow">Arrow To Content</title>
         <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/Arrow-To-Content.svg" x="0" y="0" width="100%" height="100%"></image>
       </svg>
   	</header>
-  	<main class="container--primary" id="content">
 
-      <div class="portfolio--grid">
-        <h2 class="heading h2 grid--heading">My Work</h2>
-        <div class="portfolio--grid--item">
-          <div class="grid--item--wrapper">
-            <h3 class="item--heading">Bromsgrove Body Repairs</h3>
-            <p class="item--desc">My first piece of client work was for Bromsgrove Body Repairs, a vehicle repair business local to Bromsgrove. They required a small website to allow customers to learn about the company's services and get in touch.</p>
-            <a class="item--link" href="http://www.dvlpr.tech/BBR/" title="Bromsgrove Body Repairs devleopment site.">See the site</a>
+
+  	<main id="content">
+      <div class="grid section">
+        <h2 class="heading h2">My Work</h2>
+        <div class="grid-item">
+          <div class="item-wrapper">
+            <h3>Bromsgrove Body Repairs</h3>
+            <p>My first piece of client work was for Bromsgrove Body Repairs, a vehicle repair business local to Bromsgrove. They required a small website to allow customers to learn about the company's services and get in touch.</p>
+            <a href="http://www.dvlpr.tech/BBR/" title="Bromsgrove Body Repairs devleopment site.">See the site</a>
           </div>  
         </div>
-        <div class="portfolio--grid--item">
-          <div class="grid--item--wrapper">
-            <h3 class="item--heading">The Student Survival Guide</h3>
-            <p class="item--desc">One of the first websites that I'd created outside of my portfolio, and created largely in HTML and CSS was the Student Survival Guide. A piece of coursework, it's designed to give students a feel for Manchester.</p>
-            <a class="item--link" href="/project/" title="The Student Survival Gudide site.">See the site</a>
+        <div class="grid-item">
+          <div class="item-wrapper">
+            <h3>The Student Survival Guide</h3>
+            <p>One of the first websites that I'd created outside of my portfolio, and created largely in HTML and CSS was the Student Survival Guide. A piece of coursework, it's designed to give students a feel for Manchester.</p>
+            <a href="/project/" title="The Student Survival Gudide site.">See the site</a>
+          </div>
+        </div>
+        <h2 class="heading h2">My Projects</h2>
+        <div class="grid-item">
+          <div class="item-wrapper">
+            <h3>Fluid & Responsive CSS Grids</h3>
+            <p>I'd learnt about CSS Grids a while back, but wanted to create a manner in which content could flow and the grid react fluidly within the browser. It's a bit like Masonry.js</p>
+            <a href="http://www.foxsocks.me/" title="Responsive CSS Grids project.">See the project</a>
           </div>  
         </div>
-        <h2 class="heading h2 grid--heading">My Projects</h2>
-        <div class="portfolio--grid--item">
-          <div class="grid--item--wrapper">
-            <h3 class="item--heading">Fluid & Responsive CSS Grids</h3>
-            <p class="item--desc">I'd learnt about CSS Grids a while back, but wanted to create a manner in which content could flow and the grid react fluidly within the browser. It's a bit like Masonry.js</p>
-            <a class="item--link" href="http://www.foxsocks.me/" title="Responsive CSS Grids project.">See the project</a>
-          </div>  
-        </div>
-        <div class="portfolio--grid--item">
-          <div class="grid--item--wrapper">
-            <h3 class="item--heading">Learning Wordpress</h3>
-            <p class="item--desc">Having developed static websites for a while, it suddenly occured to me that not every website would work as such - then calling into question dynamic content.</p>
-            <a class="item--link" href="/learning-wordpress/" title="Wordpress project.">See the project</a>
+        <div class="grid-item">
+          <div class="item-wrapper">
+            <h3>Learning Wordpress</h3>
+            <p>Having developed static websites for a while, it suddenly occured to me that not every website would work as such - then calling into question dynamic content.</p>
+            <a href="/learning-wordpress/" title="Wordpress project.">See the project</a>
           </div>  
         </div>
       </div>
 
-
-      <div class="section--darkgradient full--width">
-
-        <div class="portfolio--grid">
-
-          <h2 class="heading h2 grid--heading">My Process</h2>
-          <p class="grid--intro">For some context, I'll quickly detail my approach to projects. I'll likely alter it here and there, as there's always something new to learn, or emerging technologies changing the way that we work.</p>
-
-          <h3 class="grid--subheading grid--left">Discovery</h3>
-          <p class="grid--paragraph grid--left no--padding">After getting in touch, we'll shortly meet in order to discuss your future website. Perhaps the most important phase, these questions will tend to inform the majority other of the later process.</p>
-          <p class="grid--paragraph grid--left">We'll learn about the prosper and struggles of your digital strategy, and how this project can successfully tie into and enhance that.</p>
-
-          <h3 class="grid--subheading grid--right grid--4">Research</h3>
-          <p class="grid--paragraph grid--right no--padding">Using aspects identified like your audience, competitors and some of your personal preferences, I'll dive into research. This would best inform me how a website can cater towards your application and potential customers.</p>
-          <p class="grid--paragraph grid--right no--padding no--margin">Completed in this phase:</p>
-          <ul class="grid--paragraph grid--right grid--list">
-            <li>Website audits.</li>
-            <li>User profiling and personas.</li>
-            <li>Competitor analyses.</li>
-            <li>Tehnical requirements.</li>
-          </ul>
-
-          <h3 class="grid--subheading grid--left grid--5">Design</h3>
-          <p class="grid--paragraph grid--left no--padding">With preliminary stages complete, the product can beging to take form. Several stages of iterative design through which the product grows in fidelity, with testing phases throghout, ensure that the ideas are correct before diving into development.</p>
-          <p class="grid--paragraph grid--left no--padding no--margin">Completed in this phase:</p>
-          <ul class="grid--paragraph grid--left grid--list">
-            <li>Low-fidelity wireframes.</li>
-            <li>Medium to high fidelity designs.</li>
-            <li>A/B user testing.</li>
-          </ul>
-
-          <h3 class="grid--subheading grid--right">Development</h3>
-          <p class="grid--paragraph grid--right">Lorem mollit Lorem elit duis ut deserunt nisi duis irure. Veniam voluptate labore voluptate do cillum irure cupidatat minim pariatur. Amet minim officia eu laborum pariatur ullamco. Mollit ut ipsum sit enim voluptate excepteur quis dolor nisi non.</p>
-        </div>
-      </div>
-
-      <div class="portfolio--grid">
+      <div class="grid">
         <a href="https://drive.google.com/open?id=18fVk3f2pTylrKAh2DEU7ygUMmZNHx1vJ" class="big--button" title="View Cameron's CV on Google Drive">My CV (Google Drive, 24KB)
-        <svg class="button--ext" viewBox="0 0 283.922 283.922" aria-describedby="external--link">
-          <title id="external--link">External Link Notifier</title>
-          <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/external-link.svg" x="0" y="0" width="100%" height="100%"></image>
-        </svg>
+          <svg class="button--next" viewBox="0 0 283.922 283.922" aria-describedby="external--link">
+            <title id="external--link">External Link Notifier</title>
+            <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/external-link.svg" x="0" y="0" width="100%" height="100%"></image>
+          </svg>
         </a>
 
       </div>
 
-      <div class="section left-section title-section section--dark">
-        <h2 class="heading h2">Skills</h2>
+      <div class="section left title dark">
+        <h2 class="heading h2">What I do</h2>
       </div>
-      <div class="section right-section text-section section--dark">
-        <p class=" section--paragraph list--paragraph">At the moment I'm most comfortable working on the front-end of the web, with focus on the following technologies:</p>
-        <ul class="section--list">
-          <li class="section--list--element">HTML5</li>
-          <li class="section--list--element">CSS3 &amp; SASS</li>
-          <li class="section--list--element">JavaScript &amp; jQuery</li>
-          <li class="section--list--element">WordPress</li>
+      <div class="section right text list dark">
+        <p>I currently work in agency:</p>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3 &amp; SASS</li>
+          <li>JavaScript &amp; jQuery</li>
+          <li>WordPress</li>
         </ul>
-        <p class="section--paragraph list--paragraph">In a rapidly changing landscape, it's important to keep learning and doing! Here's what I'm working on at the moment:</p>
-        <ul class="section--list">
-          <li class="section--list--element">Vue.js</li>
-          <li class="section--list--element">Atomic Design</li>
-          <li class="section--list--element">French</li>
+        <p>In a rapidly changing landscape, it's important to keep learning and doing! Here's what I'm working on at the moment:</p>
+        <ul>
+          <li>Vue.js</li>
+          <li>Atomic Design</li>
+          <li>French</li>
         </ul>
       </div>
-
-
-      <div class="portfolio--grid clients">
-        <h2 class="heading h2 grid--heading">Past Clients</h2>
-        <a href="#" class="client--link" title="Bromsgrove Body Repairs website">
-          <img class="client--logo" src="img/bbr--logo.png" alt+"Bromsgrove Body Repairs Logo">
-        </a>
-        <p class="client--contact"><a href="contact.html" class="text-link link-dark" title="Contact page">Get in touch</a> if you'd like to be on this list in the future!</p>
-      </div>
-
-
-
-
 
 
   	</main>
@@ -196,7 +150,7 @@
             <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/GitHub-Icon-White.svg" x="0" y="0" width="100%" height="100%"></image>
           </a>
         </svg>
-        <svg viewBox="0 0 31.665 31.665" aria-describedby="Codpen-Icon-Footer">
+        <svg viewBox="0 0 31.665 31.665" aria-describedby="Codepen-Icon-Footer">
           <a href="https://codepen.io/cameronspixels/">
             <title id="Codepen-Icon-Footer">Cameron's Codepen Page</title>
             <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/Codepen-Icon.svg" x="0" y="0" width="100%" height="100%"></image>
@@ -204,11 +158,11 @@
         </svg>
         <ul>
           <li><a href="index.html" title="Homepage">Home</a></li>
-          <li><a href="portfolio.html" title="Portfolio page">Work &amp; CV</a></li>
-          <li><a href="blog.html" title="Blog page">Blog</a></li>
+          <li><a href="portfolio.html" title="Portfolio page">Things</a></li>
+          <li><a href="photography.html" title="Blog page">Ramblings</a></li>
           <li><a href="contact.html" title="Contact page">Contact</a></li>
         </ul>
-        <p>&copy; <a class="text-link link-light" href="http://www.cameronspixels.co.uk/" title="Cameron Barnes' Website">Cameron</a> 2018.</p>
+        <p>&copy; <a class="text-link link-dark text-link link-light" href="http://www.cameron.coffee/" title="Cameron's website.">Cameron</a> 2019.</p>
       </div>
     </footer>
   </body>

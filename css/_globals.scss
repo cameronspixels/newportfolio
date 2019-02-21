@@ -1,0 +1,34 @@
+:root {
+	--white: #FFF;
+	--off-white: #F5F5F5;
+	--grad-white: linear-gradient(to bottom right, #FFF, #F5F5F5);
+	--very-off-white: #BDBDBD;
+	--grey: #303036;
+	--off-grey: #1e1e20;
+	--black: #0D0D0D;
+
+	--grad-home: linear-gradient(to bottom right, #D20D2E, #C200D2, #5900D2);
+	--faux-home: linear-gradient(to right, #D20D2E, #C200D2, #5900D2);
+	--grad-port: linear-gradient(to bottom right, #0980B2, rgb(0, 202, 51));
+	--grad-blog: linear-gradient(to bottom right, #FFF419, rgb(255, 163, 25), #FF4C0D);
+	--grad-contact: linear-gradient(to bottom right, rgb(89, 43, 141), rgb(199, 0, 189));
+
+	--none: rgba(0,0,0,0);
+	--mobile--padding: 0 20px;
+
+	--red: #D20D2E; --pink: #C200D2; --purple: #5900D2; --darkblue: #0B1BDF;
+
+	--yellow: #FFBF47;
+	--bg--yellow--2: #e6bf13;
+
+}
+
+@keyframes fade-in {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+@keyframes fade-out {
+	from { opacity: 1; }
+	to { opacity: 0; }
+}
