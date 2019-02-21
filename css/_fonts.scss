@@ -1,36 +1,71 @@
+// PT Sans
 @font-face {
   font-family: 'PT Sans';
   font-weight: normal;
   font-display: swap;
-  src: url(fonts/PT_Sans-Web-Regular.ttf) format('truetype');
+  src: url(fonts/pt_sans/PT_Sans-Web-Regular.ttf) format('truetype');
 }
 @font-face {
   font-family: 'PT Sans';
   font-weight: normal; font-style: italic;
   font-display: swap;
-  src: url(fonts/PT_Sans-Web-Italic.ttf) format('truetype');
+  src: url(fonts/pt_sans/PT_Sans-Web-Italic.ttf) format('truetype');
 }
 @font-face {
   font-family: 'PT Sans';
   font-weight: bold;
   font-display: swap;
-  src: url(fonts/PT_Sans-Web-Bold.ttf) format('truetype');
+  src: url(fonts/pt_sans/PT_Sans-Web-Bold.ttf) format('truetype');
 }
+// Raleway
 @font-face {
   font-family: 'Raleway';
   font-weight: normal;
   font-display: swap;
-  src: url(fonts/Raleway-Regular.ttf) format('truetype');
+  src: url(fonts/raleway/Raleway-Regular.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Raleway';
   font-weight: bold;
   font-display: swap;
-  src: url(fonts/Raleway-Bold.ttf) format('truetype');
+  src: url(fonts/raleway/Raleway-Bold.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Raleway';
   font-weight: extra;
   font-display: swap;
-  src: url(fonts/Raleway-ExtraBold.ttf) format('truetype');
+  src: url(fonts/raleway/Raleway-ExtraBold.ttf) format('truetype');
+}
+// Inter
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("Inter-Light.woff2") format("woff2"),
+       url("Inter-Light.woff") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("Inter-Regular.woff2") format("woff2"),
+       url("Inter-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("Inter-Italic.woff2") format("woff2"),
+       url("Inter-Italic.woff") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("Inter-SemiBold.woff2") format("woff2"),
+       url("Inter-SemiBold.woff") format("woff");
 }
