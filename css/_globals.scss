@@ -1,25 +1,29 @@
 :root {
-	--white: #FFF;
-	--off-white: #F5F5F5;
-	--grad-white: linear-gradient(to bottom right, #FFF, #F5F5F5);
-	--very-off-white: #BDBDBD;
-	--grey: #303036;
-	--off-grey: #1e1e20;
-	--black: #0D0D0D;
+	--white: 					hsl(0, 0%, 100%);
+	--off-white: 			hsl(0, 0%, 96%);
+	--very-off-white:	hsl(0, 0%, 74%);
 
-	--grad-home: linear-gradient(to bottom right, #D20D2E, #C200D2, #5900D2);
-	--faux-home: linear-gradient(to right, #D20D2E, #C200D2, #5900D2);
-	--grad-port: linear-gradient(to bottom right, #0980B2, rgb(0, 202, 51));
-	--grad-blog: linear-gradient(to bottom right, #FFF419, rgb(255, 163, 25), #FF4C0D);
-	--grad-contact: linear-gradient(to bottom right, rgb(89, 43, 141), rgb(199, 0, 189));
+	--black: 		hsl(0, 		0%, 6%);
+	--off-grey:	hsl(240, 	3%,	12%);
+	--grey: 		hsl(240, 	6%,	18%);
+
+	--red: 			hsl(350,	100%,	41%);
+	--pink: 		hsl(295,	100%,	41%);
+	--purple:		hsl(265,	100%,	41%);
+	--darkblue:	hsl(235,	91%,	41%);
+	--yellow: 	hsl(39, 	100%, 64%);
+	--yellow-2:	hsl(49, 	85%, 	49%);
+
+	--grad-white: 		linear-gradient(to bottom right, var(--white), var(--off-white));
+
+	--grad-home: 			linear-gradient(to bottom right, var(--red), var(--pink), var(--purple));
+	--faux-home: 			linear-gradient(to right, var(--red), var(--pink), var(--purple));
+	--grad-port: 			linear-gradient(to bottom right, #0980B2, rgb(0, 202, 51));
+	--grad-blog: 			linear-gradient(to bottom right, #FFF419, rgb(255, 163, 25), #FF4C0D);
+	--grad-contact: 	linear-gradient(to bottom right, rgb(89, 43, 141), rgb(199, 0, 189));
 
 	--none: rgba(0,0,0,0);
 	--mobile--padding: 0 20px;
-
-	--red: #D20D2E; --pink: #C200D2; --purple: #5900D2; --darkblue: #0B1BDF;
-
-	--yellow: #FFBF47;
-	--bg--yellow--2: #e6bf13;
 
 }
 
