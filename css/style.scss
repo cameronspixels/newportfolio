@@ -1,5 +1,6 @@
 @import 'globals';
 @import 'fonts';
+@import 'grid';
 
 @mixin fonts {
 	font-family: 'PT Sans', 'Open Sans', 'Ubuntu', 'Helvetica Neue', 'Arial', sans-serif;
@@ -63,6 +64,28 @@ main {
 		}	
 	}
 }
+
+.display-text {
+	p {
+		margin: 0 auto; padding: 6rem 0 1rem;
+		font-size: 2rem; font-weight: 600; line-height: 1.5;
+	}
+	a {
+		text-decoration: none; color: var(--grey); background-image: var(--faux-home);
+		background-size: 100% .2rem; background-position: 0 88%; background-repeat: no-repeat;
+		transition: background-size 440ms, background-image 440ms, color 440ms;
+		&:hover {
+			color: var(--white); background-image: var(--grad-home);
+			background-size: 100% 100%;
+			transition: background-size 770ms cubic-bezier(0.075, 0.82, 0.165, 1), background-image 660ms, color 660ms;
+		}
+	}
+}
+
+
+
+
+
 .section {
 	padding: var(--mobile--padding);
 	&.right {
