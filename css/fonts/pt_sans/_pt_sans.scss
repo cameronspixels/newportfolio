@@ -1,0 +1,19 @@
+// PT Sans
+@font-face {
+  font-family: 'PT Sans';
+  font-weight: normal;
+  font-display: swap;
+  src: url(PT_Sans-Web-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-weight: normal; font-style: italic;
+  font-display: swap;
+  src: url(PT_Sans-Web-Italic.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-weight: bold;
+  font-display: swap;
+  src: url(PT_Sans-Web-Bold.ttf) format('truetype');
+}

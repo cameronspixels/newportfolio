@@ -1,71 +1,8 @@
-// PT Sans
-@font-face {
-  font-family: 'PT Sans';
-  font-weight: normal;
-  font-display: swap;
-  src: url(fonts/pt_sans/PT_Sans-Web-Regular.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'PT Sans';
-  font-weight: normal; font-style: italic;
-  font-display: swap;
-  src: url(fonts/pt_sans/PT_Sans-Web-Italic.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'PT Sans';
-  font-weight: bold;
-  font-display: swap;
-  src: url(fonts/pt_sans/PT_Sans-Web-Bold.ttf) format('truetype');
-}
-// Raleway
-@font-face {
-  font-family: 'Raleway';
-  font-weight: normal;
-  font-display: swap;
-  src: url(fonts/raleway/Raleway-Regular.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Raleway';
-  font-weight: bold;
-  font-display: swap;
-  src: url(fonts/raleway/Raleway-Bold.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Raleway';
-  font-weight: extra;
-  font-display: swap;
-  src: url(fonts/raleway/Raleway-ExtraBold.ttf) format('truetype');
-}
-// Inter
-@font-face {
-  font-family: 'Inter';
-  font-style:  normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url(fonts/inter/Inter-Light.woff2) format("woff2"),
-       url(fonts/inter/Inter-Light.woff) format("woff");
-}
-@font-face {
-  font-family: 'Inter';
-  font-style:  normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(fonts/inter/Inter-Regular.woff2) format("woff2"),
-       url(fonts/inter/Inter-Regular.woff) format("woff");
-}
-@font-face {
-  font-family: 'Inter';
-  font-style:  italic;
-  font-weight: 400;
-  font-display: swap;
-  src: url(fonts/inter/Inter-Italic.woff2) format("woff2"),
-       url(fonts/inter/Inter-Italic.woff) format("woff");
-}
-@font-face {
-  font-family: 'Inter';
-  font-style:  normal;
-  font-weight: bold;
-  font-display: swap;
-  src: url(fonts/inter/Inter-SemiBold.woff2) format("woff2"),
-       url(fonts/inter/Inter-SemiBold.woff) format("woff");
-}
+// Standard
+@import 'fonts/open_sans/open_sans.scss'; // Good standard, used for heading and body text fallback
+@import 'fonts/pt_sans/pt_sans.scss'; // Preferred body text
+
+// Experimental
+@import 'fonts/raleway/raleway.scss'; // Not sure anymore
+@import 'fonts/inter/inter.scss'; // Clean looking sans-serif font
+@import 'fonts/bitter/bitter.scss'; // Legible serif font, good for long reading

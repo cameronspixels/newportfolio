@@ -2,7 +2,7 @@
 @import 'fonts';
 
 @mixin fonts {
-	font-family: 'PT Sans', 'Anodina', 'Raleway', 'Ubuntu', 'Helvetica Neue', 'Arial', sans-serif;
+	font-family: 'PT Sans', 'Open Sans', 'Ubuntu', 'Helvetica Neue', 'Arial', sans-serif;
 }
 
 body {
@@ -21,7 +21,7 @@ main {
 .heading {
 	margin: 0; padding: 0;
 	font-weight: 700; letter-spacing: -1px;
-	font-family: 'Inter', 'Raleway', sans-serif;
+	font-family: 'Open Sans', 'PT Sans', 'Ubuntu', 'Helvetica Neue', 'Arial', sans-serif;
 	&.h1 {
 		font-size: 4.236rem; line-height: 1.115;
 	}
