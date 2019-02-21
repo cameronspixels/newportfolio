@@ -2,7 +2,7 @@
 @import 'fonts';
 
 @mixin fonts {
-	font-family: 'PT Sans', monospace;
+	font-family: 'PT Sans', 'Open Sans', 'Ubuntu', 'Helvetica Neue', 'Arial', sans-serif;
 }
 
 body {
