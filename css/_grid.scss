@@ -1,0 +1,114 @@
+.grid-wrapper, .grid-nest {
+  margin: 0 auto;
+  max-width: 1200px;
+  // Flexbox fallback
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  @supports(display: grid) {
+		display: grid; grid-gap: 30px;
+		grid-template-columns: repeat(12, 1fr); grid-template-rows: auto;
+		&.grid-lg {
+			@media all and (max-width: 1199px) {
+        grid-template-columns: 100%;
+        grid-gap: 0;
+			}
+		}
+		&.grid-md {
+			@media all and (max-width: 991px) {
+        grid-template-columns: 100%;
+        grid-gap: 0;
+			}
+		}
+		&.grid-sm {
+			@media all and (max-width: 767px) {
+        grid-template-columns: 100%;
+        grid-gap: 0;
+			}
+		}
+	}
+}
+.grid-wrapper {
+  width: calc(100% -  80px);
+  padding: 0 40px;
+  
+}
+.grid-nest {
+  > * {
+    &:not(:last-child) {
+    }
+  }
+}
+.grid-12 {
+  // Flexbox fallback
+  width: 100%;
+  // Grid
+  grid-column: span 12;
+}
+.grid-11 {
+  width: calc((100% / 12) * 11);
+  grid-column: span 11;
+}
+.grid-10 {
+  width: calc((100% / 12) * 10);
+  grid-column: span 10;
+}
+.grid-9 {
+  width: calc((100% / 12) * 9);
+  grid-column: span 9;
+}
+.grid-8 {
+  width: calc((100% / 12) * 8);
+  grid-column: span 8;
+}
+.grid-7 {
+  width: calc((100% / 12) * 7);
+  grid-column: span 7;
+}
+.grid-6 {
+  width: calc((100% / 12) * 6);
+  grid-column: span 6;
+}
+.grid-5 {
+  width: calc((100% / 12) * 5);
+  grid-column: span 5;
+}
+.grid-4 {
+  width: calc((100% / 12) * 4);
+  grid-column: span 4;
+}
+.grid-3 {
+  width: calc((100% / 12) * 3);
+  grid-column: span 3;
+}
+.grid-2 {
+  width: calc((100% / 12) * 2);
+  grid-column: span 2;
+}
+.grid-1 {
+  width: calc(100% / 12);
+  grid-column: span 1;
+}
+.grid-12, .grid-11, .grid-10, .grid-9, .grid-8, .grid-7, .grid-6, .grid-5, .grid-4, .grid-3, .grid-2, .grid-1 {
+  // Overwrite flexbox width if grid is supported
+  @supports(display: grid) {
+		width: auto;
+  }
+  // Full width on mobile for flexbox
+  .grid-lg & {
+    @media all and (max-width: 1199px) {
+      width: 100%;
+    }
+  }
+  .grid-md & {
+    @media all and (max-width: 991px) {
+      width: 100%;
+    }
+  }
+  .grid-sm & {
+    @media all and (max-width: 767px) {
+      width: 100%;
+    }
+  }
+  
+}
