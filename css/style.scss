@@ -141,12 +141,18 @@ p {
 
 form {
 	margin: 0 auto;
-	width: 100%; max-width: 700px;
+	width: 100%; max-width: 700px!important;
+	.form-wrapper {
+		position: relative;
+	}
 	label {
 		position: absolute; top: 12px; z-index: 4;
 		font-size: 1.2rem; color: var(--very-off-white);
 		transform-origin: left;
 		transition: transform 220ms ease-in-out, color 220ms;
+		&:hover {
+			cursor: text;
+		}
 	}
 	input, textarea {
 		padding: 12px 0; width: 100%;
@@ -170,7 +176,7 @@ form {
 		
 	}
 	textarea {
-		min-height: 150px;
+		min-height: 150px; max-height: 300px;
 		resize: vertical;
 	}
 	span {

@@ -50,38 +50,46 @@
   			<h1 class="heading h1">Contact Me</h1>
   			<p>You've come this far... <span class="flashing">|</span></p>
       </div>
-  	</header>
-  	<main id="content">
-      <div class="section full">
-        <h2 class="heading h2">Composer</h2>
-        <form class="flex" action="send.php">
-          <div class="width-50">
-            <div class="align-left">
+    </header>
+    
+
+
+  	<main class="grid-wrapper grid-sm" id="content">
+
+
+
+      <div class="grid-nest grid-12 full-height" style="width: 100%;">
+        <h2 class="heading h2 grid-12" style="margin: 0 auto; width: 100%; align-self: end; max-width: 700px;">Composer</h2>
+        <form class="grid-12 grid-nest" action="send.php" style="width: 100%;">
+          
+            <div class="form-wrapper grid-6">
               <input name="name" id="name" type="text" placeholder="Your name" required />
               <label for="name">Your name</label>
               <span aria-hidden="true"></span>
             </div>
-          </div>
-          <div class="width-50">
-            <div class="align-right">
+            <div class="form-wrapper grid-6">
               <input name="email" id="email" type="text" placeholder="Your email" required />
               <label for="email">Your email</label>
               <span aria-hidden="true"></span>
             </div>
-          </div>
-          <div class="width-100">
-            <div class="form-wrapper">
+            <div class="form-wrapper grid-12">
               <textarea name="message" id="message" placeholder="Your message" required></textarea>
               <label for="message">Your message</label>
               <span aria-hidden="true"></span>
             </div>
-          </div>
 
-          <button>Drop it</button>
+          <button class="grid-12">Drop it</button>
 
         </form>
       </div>
-  	</main>
+
+
+
+
+    </main>
+    
+
+
   	<footer>
       <div class="container">
         <svg viewBox="0 0 612 612" aria-describedby="Twitter-Icon-Footer">
