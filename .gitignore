@@ -1,1 +1,3 @@
 blog-posts/*
+.sass-cache/*
+css/style.css.map
