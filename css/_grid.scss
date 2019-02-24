@@ -97,17 +97,17 @@
   // Full width on mobile for flexbox
   .grid-lg & {
     @media all and (max-width: 1199px) {
-      width: 100%;
+      width: 100%; grid-column: span 12;
     }
   }
   .grid-md & {
     @media all and (max-width: 991px) {
-      width: 100%;
+      width: 100%; grid-column: span 12;
     }
   }
   .grid-sm & {
     @media all and (max-width: 767px) {
-      width: 100%;
+      width: 100%; grid-column: span 12;
     }
   }
   
