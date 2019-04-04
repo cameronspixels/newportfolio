@@ -30,11 +30,28 @@
       ga('create', 'UA-86304133-1', 'auto');
       ga('send', 'pageview');
     </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script>
+      $(document).ready(function() {
+
+          // Create a variable
+          var $header = $('.content');
+          // Create a tween
+          var tween = TweenLite.from($header, 1.33, {
+            scale: .95,
+            opacity: 0,
+            ease: Power4.easeOut,
+            delay: .33
+          });
+
+      });
+    </script>
     <script type="text/javascript" src="scripty.js"></script>
   </head>
   <body id="top">
-  	<header class="blue-green" id="openMenu">
+    <div class="red-blue">
+  	<header id="header">
       <a class="skiplink" href="#content" title="Skip to main content">Skip to main content</a>
   		<nav>
         <a href="#" class="hamburger open" id="hamburgerOpen" title="Open mobile menu"><span class="block-1"></span><span class="block-2"></span><span class="block-3"></span></a>
@@ -56,7 +73,8 @@
         <title id="arrow">Arrow To Content</title>
         <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/Arrow-To-Content.svg" x="0" y="0" width="100%" height="100%"></image>
       </svg>
-  	</header>
+    </header>
+  </div>
 
 
   	<main id="content">

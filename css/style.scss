@@ -44,6 +44,7 @@ main {
 	&.h1 {
 		margin: 0 0 1.33rem;
 		font-size: 4.236rem; line-height: 1.115;
+			transform: matrix(1, 0, 0, 1, 0, 0);
 	}
 	&.h2 {
 		padding: 5rem 0 2rem;
@@ -103,7 +104,7 @@ p {
 }
 
 .full-height {
-	min-height: 100vh;
+	padding: 6rem 0;
 }
 
 .half-height {
@@ -125,7 +126,7 @@ p {
 .display-text {
 	p {
 		margin: 0 auto;
-		font-size: 2.4rem; font-weight: 600; line-height: 1.5;
+		font-size: 2.4rem; font-weight: 600; line-height: 1.4;
 	}
 	a {
 		text-decoration: none; color: var(--grey); background-image: var(--faux-home);
@@ -206,23 +207,10 @@ form {
 @import 'footer';
 
 @media screen and (min-width: 768px) {
-
-}
-
-@media screen and (min-width: 992px) {
-	.display-text {
-		p {
-			font-size: 3.2rem;
-		}
+	.full-height {
+		padding: 10rem 0;
 	}
-}
-
-@media screen and (min-width: 1200px) {
-	.display-text {
-		p {
-			font-size: 4rem;
-		}
-	}
+	
 }
 
 @media screen and (min-width: 800px) {
@@ -237,3 +225,29 @@ form {
 		}
 	}
 }
+
+@media screen and (min-width: 992px) {
+	.display-text {
+		p {
+			font-size: 3.2rem; line-height: 1.5;
+		}
+	}
+	.half-text {
+		p {
+			min-height: 120px;
+		}
+	}
+	.full-height {
+		padding: 0;
+		min-height: 100vh;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.display-text {
+		p {
+			font-size: 4rem;
+		}
+	}
+}
+

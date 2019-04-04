@@ -28,6 +28,32 @@
       ga('create', 'UA-86304133-1', 'auto');
       ga('send', 'pageview');
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script>
+      $(document).ready(function() {
+
+          // Create a variable
+          var $header = $('.content');
+          // Create a tween
+          var tween = TweenLite.from($header, 1.33, {
+            scale: .95,
+            opacity: 0,
+            ease: Power4.easeOut,
+            delay: .33
+          });
+
+          $('nav ul li').click(function() {
+            var tweenOut = TweenLite.t0($header, 1.33, {
+            scale: .95,
+            opacity: 0,
+            ease: Power4.easeOut,
+            delay: .33
+            });
+          });
+
+      });
+    </script>
     <script defer async type="text/javascript" src="scripty.min.js"></script>
   </head>
   <body id="top">
@@ -47,7 +73,7 @@
         </div>
       </nav>
   		<div class="content">
-  			<h1 class="heading h1">Cameron Barnes</h1>
+  			<h1 class="heading h1" id="box">Cameron Barnes</h1>
   			<p><span id="subtitle"></span> <span class="flashing">|</span></p>
       </div>
       <div class="more-info"><p>Scroll this way</p>
@@ -70,7 +96,7 @@
     </div>
 
 
-    <div class="grid-nest grid-md grid-12 half-height">
+    <div class="grid-nest grid-md grid-12 half-height half-text">
       <div class="grid-nest grid-md grid-6">
         <div class="grid-12">
             <h3 class="heading h3">Technically</h3>
