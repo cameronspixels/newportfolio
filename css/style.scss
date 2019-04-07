@@ -6,6 +6,12 @@
 	font-family: 'PT Sans', 'Open Sans', 'Ubuntu', 'Helvetica Neue', 'Arial', sans-serif;
 }
 
+.overlay {
+	height: 100vh; width: 100vw;
+	position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 1000;
+	pointer-events: none;
+}
+
 body {
 	margin: 0; padding: 0;
 	background: var(--white); color: var(--grey);
@@ -67,6 +73,16 @@ p {
 	&.sm {
 		font-size: 1.115rem; line-height: 1.45;
 	}
+	a {
+		text-decoration: none; color: var(--grey); background-image: var(--faux-home);
+		background-size: 100% .16rem; background-position: 0 88%; background-repeat: no-repeat;
+		transition: background-size 440ms, background-image 440ms, color 440ms;
+		&:hover, &:focus, &:active {
+			color: var(--white); background-image: var(--grad-home);
+			background-size: 100% 100%;
+			transition: background-size 770ms cubic-bezier(0.075, 0.82, 0.165, 1), background-image 660ms, color 660ms;
+		}
+	}
 }
 
 .text-link {
@@ -122,6 +138,8 @@ p {
 		text-align: center;
 	}
 }
+
+
 
 .display-text {
 	p {
