@@ -1,17 +1,16 @@
 .photo-grid {
-  margin: 3rem;
-  width: calc(100% - 6rem);
+  margin: 3rem auto;
+  width: calc(100% - 2rem); max-width: 1200px;
   display: grid; grid-column: 1/-1;
   grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
-  grid-gap: 3rem; grid-auto-rows: 250px; grid-auto-flow: row dense;
+  grid-gap: 1rem; grid-auto-rows: 275px; grid-auto-flow: row dense;
   @media screen and (min-width: 382px) {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   }
   .regular {
     height: auto; width: auto; display: block;
     position: relative; transform: none; overflow: hidden;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    &:hover, &:focus {
+    &:hover, &:focus, &:active {
       .img {
         transform: scale(1.05); transition: all 220ms ease-in-out;
       }
