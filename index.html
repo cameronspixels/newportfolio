@@ -30,33 +30,12 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
-    <script>
-      $(document).ready(function() {
-
-          // Create a variable
-          var $header = $('.content');
-          // Create a tween
-          var tween = TweenLite.from($header, 1.33, {
-            scale: .95,
-            opacity: 0,
-            ease: Power4.easeOut,
-            delay: .33
-          });
-
-          $('nav ul li').click(function() {
-            var tweenOut = TweenLite.t0($header, 1.33, {
-            scale: .95,
-            opacity: 0,
-            ease: Power4.easeOut,
-            delay: .33
-            });
-          });
-
-      });
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineLite.min.js"></script>
+    <script type="text/javascript" src="animate.js"></script>
     <script defer async type="text/javascript" src="scripty.min.js"></script>
   </head>
   <body id="top">
+  <div class="overlay red-blue"></div>
   <div class="red-blue">
   	<header id="header">
       <a class="skiplink" href="#content" title="Skip to main content">Skip to main content</a>
@@ -92,7 +71,7 @@
 
 
     <div class="grid-nest grid-sm grid-12 display-text full-height">
-      <p class="grid-12">Hi, I'm a web developer and <a href="#">BSc Web Development</a> graduate, currently at <a href="#">Frank Design</a> in Manchester.</p>
+      <p class="grid-12">Hi, I'm a web developer and <a title="BSc Digital Media and Communications at MMU" href="https://www2.mmu.ac.uk/study/undergraduate/course/bsc-digital-media-and-communications/">BSc Web Development</a> graduate, currently at <a href="https://frankltd.co.uk" title="Frank website">Frank</a> in Manchester.</p>
     </div>
 
 
@@ -100,13 +79,13 @@
       <div class="grid-nest grid-md grid-6">
         <div class="grid-12">
             <h3 class="heading h3">Technically</h3>
-            <p class="md">I'm well tuned to the front-end, enjoying working largely with HTML and CSS. I don't like Javascript very much, and can hack together enough PHP for websites to be - in some way - functional.</p>
+            <p class="md">I prefer the front-end of the web, the likes of HTML, CSS and bits of PHP to make it all work. I like to design websites from time-to-time, but you'd be brave to pay me for it.</p>
         </div>
       </div>
       <div class="grid-nest grid-md grid-6">
         <div class="grid-12">
             <h3 class="heading h3">Personally</h3>
-            <p class="md">I like to make websites and resources that are useful or mean something to people. There's probably enough of the rest. I'll never ask to send you notifications, I promise.</p>
+            <p class="md">I want to consider what's important to people online and create responsive, accessible websites that are of use to everyone. I also <a title="Photography page" href="photography.html">take photos</a>, play music and want to save the world.</p>
         </div>
       </div>
     </div>
@@ -119,7 +98,7 @@
       <div class="grid-6">
         <a class="item-wrapper" href="http://www.dvlpr.tech/BBR/" title="Bromsgrove Body Repairs devleopment site.">
           <h3>Bromsgrove Body Repairs</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis purus odio. Donec nisi lectus, pharetra ut bibendum in, placerat a erat. Quisque vehicula luctus ex ut ullamcorper. Donec eget mauris vel sapien vehicula condimentum.</p>
+          <p>My first piece of client work for a vehicle body repair garage local to Bromsgrove, Worcestershire. BBR hadn't had a website for a while, and needed a way for clients to understand more about and get in touch with their operation. <u>Read the case study for more.</u></p>
           <svg aria-hidden="true" class="link-svg" viewBox="0 0 283.922 283.922" aria-describedby="external--link">
             <title id="external--link">External Link Notifier</title>
             <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/outlink.svg" x="0" y="0" width="100%" height="100%"></image>
@@ -140,7 +119,7 @@
       <div class="grid-6">
         <a class="item-wrapper" href="http://www.foxsocks.me/" title="Responsive CSS Grids project.">
           <h3>Fluid & Responsive CSS Grids</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis purus odio. Donec nisi lectus, pharetra ut bibendum in, placerat a erat. Quisque vehicula luctus ex ut ullamcorper. Donec eget mauris vel sapien vehicula condimentum.</p>
+          <p>CSS Grid was (and is) the hot new thing in the world of web layout..</p>
           <svg aria-hidden="true" class="link-svg" viewBox="0 0 283.922 283.922" aria-describedby="external--link">
             <title id="external--link">External Link Notifier</title>
             <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/outlink.svg" x="0" y="0" width="100%" height="100%"></image>
@@ -150,7 +129,7 @@
       <div class="grid-6">
         <a class="item-wrapper" href="/learning-wordpress/" title="Wordpress project.">
           <h3>CSS Grid Framework</h3>
-          <p>I like Bootstrap more than I'm comfortable admitting,.</p>
+          <p>I like Bootstrap more than I'm comfortable admitting, but it's more than what I need. I set out to make a mobile-first CSS layout framework that starts by using CSS Grid and falls back through other browser compatbile technologies.</p>
           <svg aria-hidden="true" class="link-svg" viewBox="0 0 283.922 283.922" aria-describedby="external--link">
             <title id="external--link">External Link Notifier</title>
             <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/outlink.svg" x="0" y="0" width="100%" height="100%"></image>
